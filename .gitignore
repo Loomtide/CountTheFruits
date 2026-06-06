@@ -18,6 +18,7 @@
 .loomtide/reports/
 .loomtide/traces/
 .loomtide/verify/
+.loomtide/captures/
 trace/
 
 # Claude Code local agent state

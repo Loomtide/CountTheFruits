@@ -2604,6 +2604,13 @@ MonoBehaviour:
   answerPanel: {fileID: 563040807}
   countManager: {fileID: 1105695727}
   hud: {fileID: 563040806}
+  hideOnComplete:
+  - {fileID: 1242765474}
+  - {fileID: 1964301758}
+  - {fileID: 1945566362}
+  - {fileID: 149652906}
+  - {fileID: 253884175}
+  - {fileID: 332101125}
   roundCounts: 0300000004000000050000000600000007000000
   nextRoundDelay: 1.5
   autoStart: 0
@@ -4682,7 +4689,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 207b0ef8ccefb45e6a9f5d63741067bb, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4759,7 +4766,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 207b0ef8ccefb45e6a9f5d63741067bb, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

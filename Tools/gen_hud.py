@@ -21,15 +21,19 @@ def rounded_rect_mask(W,H,r):
     ImageDraw.Draw(m).rounded_rectangle([0,0,W-1,H-1],radius=r,fill=255)
     return m
 
-def gen_card(size=180, pad=30, radius=38):
-    """White rounded card with a soft drop shadow, symmetric margins -> 9-sliceable.
-    9-slice border should be ~ pad+radius."""
+def gen_card(size=160, pad=4, radius=30):
+    """White rounded card with a thin, soft drop shadow and symmetric margins.
+
+    The white fill spans nearly the whole texture (only a `pad`-px margin for the soft
+    shadow), so when the Image is 9-sliced (border = pad+radius) and stretched, the white
+    card envelopes its content with even padding and fills >70% of any reasonable rect.
+    9-slice border to set in the .meta = pad + radius (== 34)."""
     W=H=size*SS; p=pad*SS; r=radius*SS
     inner=[p,p,W-1-p,H-1-p]
-    # shadow
+    # soft drop shadow, kept inside the thin margin (slight downward offset for lift)
     sh=Image.new('RGBA',(W,H),(0,0,0,0))
-    ImageDraw.Draw(sh).rounded_rectangle([inner[0],inner[1]+8*SS,inner[2],inner[3]+8*SS],radius=r,fill=(70,40,110,70))
-    sh=sh.filter(ImageFilter.GaussianBlur(10*SS))
+    ImageDraw.Draw(sh).rounded_rectangle([inner[0],inner[1]+2*SS,inner[2],inner[3]+2*SS],radius=r,fill=(70,40,110,85))
+    sh=sh.filter(ImageFilter.GaussianBlur(2*SS))
     img=sh
     # white card
     card=Image.new('RGBA',(W,H),(0,0,0,0))

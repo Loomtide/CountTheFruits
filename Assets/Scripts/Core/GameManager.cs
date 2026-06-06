@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public AnswerPanel answerPanel;
     public CountManager countManager;
     public HudController hud;
+    [Tooltip("Gameplay field hidden while the end summary is up (round banner, count chip, progress, answer buttons) so nothing draws over or bleeds through the reward card. HomeButton is intentionally NOT listed — it stays available on the reward screen.")]
+    public GameObject[] hideOnComplete;
 
     [Tooltip("Fruit count per round — the difficulty ramp.")]
     public int[] roundCounts = { 3, 4, 5, 6, 7 };
@@ -48,6 +50,7 @@ public class GameManager : MonoBehaviour
         Complete = false;
         Running = true;
         Stars = 0;
+        SetFieldActive(true);
         if (hud != null) hud.SetStars(0);
         StartRound(0);
     }
@@ -91,8 +94,20 @@ public class GameManager : MonoBehaviour
     {
         Complete = true;
         Running = false;
+        // Clear the gameplay field so nothing draws over the end summary (world fruit would
+        // otherwise punch through the Screen Space - Camera HUD; the chips/banner would bleed
+        // through the scrim). Mirrors the Home/back field-clear, but keeps the Home button.
+        if (spawner != null) spawner.Clear();
+        SetFieldActive(false);
         SfxPlayer.Play(fanfareClip);
         OnGameComplete?.Invoke(Stars, roundCounts.Length);
+    }
+
+    void SetFieldActive(bool on)
+    {
+        if (hideOnComplete == null) return;
+        foreach (var go in hideOnComplete)
+            if (go != null) go.SetActive(on);
     }
 
     /// <summary>Restart from round 1 (used by the end-summary replay button).</summary>
