@@ -2615,6 +2615,7 @@ MonoBehaviour:
   nextRoundDelay: 1.5
   autoStart: 0
   fanfareClip: {fileID: 8300000, guid: 476f5604e26264cb7a7c3252bbdcb6f0, type: 3}
+  startClip: {fileID: 8300000, guid: 7a49f6ed7c3034b11b7598ee2d73229d, type: 3}
 --- !u!114 &1105695729
 MonoBehaviour:
   m_ObjectHideFlags: 0

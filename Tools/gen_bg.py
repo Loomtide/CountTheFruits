@@ -101,20 +101,23 @@ def gen_ground(w=2400, h=460, waves=9, wave_amp=0.05):
     img = img.resize((w, h), Image.LANCZOS)
     save(img, 'ground.png')
 
-# ---- cloud: soft rounded puff, transparent white ----
+# ---- cloud: soft rounded puff, transparent white (fully inside the texture) ----
 def gen_cloud(w=520, h=300):
     W, H = w*SS, h*SS
     img = Image.new('RGBA', (W, H), (0,0,0,0))
     d = ImageDraw.Draw(img)
     white = (255,255,255,255)
-    cy = int(H*0.62)
-    # cluster of overlapping circles
-    lobes = [(0.30,0.62,0.30),(0.52,0.42,0.40),(0.72,0.60,0.30),(0.50,0.70,0.46)]
+    # Everything stays within [top_pad, base] so the puff is never clipped by the
+    # texture edge — base sits at 0.82*H, leaving a soft bottom margin.
+    base = int(H*0.82)
+    # gently rounded base slab (soft, slightly rounded bottom — not a hard cut)
+    d.rounded_rectangle([int(W*0.15), int(H*0.48), int(W*0.85), base],
+                        radius=int(H*0.16), fill=white)
+    # fluffy top lobes, all kept above `base`
+    lobes = [(0.28,0.54,0.22),(0.46,0.38,0.28),(0.64,0.48,0.24),(0.79,0.58,0.18)]
     for fx,fy,fr in lobes:
         cx, ccy, r = int(W*fx), int(H*fy), int(H*fr)
-        d.ellipse([cx-r, ccy-r, cx+r, ccy-r+2*r], fill=white)
-    # flat-ish bottom
-    d.rectangle([int(W*0.18), cy, int(W*0.82), int(H*0.78)], fill=white)
+        d.ellipse([cx-r, ccy-r, cx+r, ccy+r], fill=white)
     img = img.filter(ImageFilter.GaussianBlur(W*0.004))
     img = img.resize((w, h), Image.LANCZOS)
     save(img, 'cloud.png')

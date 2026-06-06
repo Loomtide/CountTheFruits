@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip fanfareClip;
+    [Tooltip("Cheerful jingle played when a playthrough begins (Play button / Play again).")]
+    public AudioClip startClip;
 
     public int CurrentRound { get; private set; }
     public int Stars { get; private set; }
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
         Complete = false;
         Running = true;
         Stars = 0;
+        SfxPlayer.Play(startClip);
         SetFieldActive(true);
         if (hud != null) hud.SetStars(0);
         StartRound(0);
