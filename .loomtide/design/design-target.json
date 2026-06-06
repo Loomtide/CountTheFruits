@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1",
+  "status": "approved",
+  "mode": "generated",
+  "referenceGame": null,
+  "heroShot": "hero-shot.png",
+  "heroShotHtml": "hero-shot.html",
+  "pngSha256": "9932a500e5ee6ba57ededf0280d7258a152fb5eeeaabca341ff76c1dec678e1a",
+  "note": "approved by avinash (Count the Fruits counting-game hero shot)",
+  "approvedAt": "2026-06-05T14:23:17.956Z",
+  "updatedAt": "2026-06-05T14:23:17.956Z"
+}

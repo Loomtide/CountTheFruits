@@ -1,0 +1,27 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+*.csproj
+*.sln
+*.user
+
+# OS
+.DS_Store
+
+# Loomtide local
+.loomtide-fixtures/
+.loomtide/reports/
+.loomtide/traces/
+.loomtide/verify/
+trace/
+
+# Claude Code local agent state
+.claude/
+
+# Local MCP bridge config (machine-specific absolute paths)
+.mcp.json
