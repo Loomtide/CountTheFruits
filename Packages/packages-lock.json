@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.loomtide.unitybridge": {
-      "version": "file:/Users/avinash/Projects/AI/Loomtide/packages/com.loomtide.unitybridge",
+      "version": "file:/Users/avinash/Projects/AI/Loomtide/.worktrees/replay-verification-doc/packages/com.loomtide.unitybridge",
       "depth": 0,
       "source": "local",
       "dependencies": {

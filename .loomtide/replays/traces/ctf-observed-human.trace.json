@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "0.1",
+  "id": "ctf-observed-human",
+  "title": "observed human play",
+  "start": {
+    "scene": "Assets/Scenes/CountTheFruits.unity",
+    "reset": "scene-load"
+  },
+  "input": {
+    "backend": "ui-events"
+  },
+  "segments": [
+    {
+      "id": "observed",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/HUD/StartScreen/StartButton/Label",
+            "scene": "CountTheFruits"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/HUD/StartScreen/StartButton/Label",
+            "scene": "CountTheFruits"
+          }
+        },
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/HUD/AnswerButton2/Label",
+            "scene": "CountTheFruits"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/HUD/AnswerButton2/Label",
+            "scene": "CountTheFruits"
+          }
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "expected": "success"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "0.1",
+  "id": "ctf-outcome",
+  "title": "outcome-verified run",
+  "start": {
+    "scene": "Assets/Scenes/CountTheFruits.unity",
+    "reset": "scene-load"
+  },
+  "input": {
+    "backend": "ui-events"
+  },
+  "segments": [
+    {
+      "id": "step-2",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/HUD/StartScreen/StartButton/Label"
+          },
+          "timeoutMs": 4000,
+          "minDelayMs": 591.6509999999998
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/HUD/StartScreen/StartButton/Label"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-2"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/HUD/AnswerButton1/Label"
+          },
+          "timeoutMs": 4000,
+          "minDelayMs": 3000
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/HUD/AnswerButton1/Label"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-3"
+        }
+      ]
+    }
+  ],
+  "assertions": [
+    {
+      "id": "count",
+      "locator": {
+        "path": "/HUD/CountChip/CountText"
+      },
+      "component": "Text",
+      "property_path": "m_Text",
+      "operator": "equals",
+      "expected": "\u00d70"
+    },
+    {
+      "id": "question",
+      "locator": {
+        "path": "/HUD/Banner/QuestionText"
+      },
+      "component": "Text",
+      "property_path": "m_Text",
+      "operator": "equals",
+      "expected": "How many <color=#ff5d72>apples</color>?"
+    }
+  ],
+  "outcome": {
+    "expected": "success"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "traceId": "ctf-observed-human",
+  "status": "pass",
+  "resetTier": "scene-load",
+  "segments": [
+    {
+      "id": "observed",
+      "status": "pass",
+      "anchorsReached": [],
+      "captures": []
+    }
+  ],
+  "assertions": [],
+  "console": {
+    "status": "pass",
+    "errorCount": 0,
+    "errors": []
+  },
+  "startedAt": "2026-06-07T05:30:18.436Z",
+  "finishedAt": "2026-06-07T05:30:20.722Z",
+  "durationMs": 2285
+}

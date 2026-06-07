@@ -1,0 +1,56 @@
+{
+  "traceId": "ctf-full-playthrough",
+  "status": "blocked",
+  "resetTier": "scene-load",
+  "blockedReason": "world-input-unsupported",
+  "segments": [
+    {
+      "id": "step-1",
+      "status": "blocked",
+      "anchorsReached": [],
+      "captures": [
+        {
+          "id": "step-1",
+          "artifact": "/Users/avinash/loomtide-runs/LoomtideGames/CountTheFruits/.loomtide/replays/reports/ctf-full-playthrough/actual/step-1.png",
+          "sha256": "ae3a196003bdc8990bc4575ca659122e5387e5afacf0520b2b72b4f612942a7f",
+          "visualStatus": "no-baseline"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "status": "blocked",
+      "anchorsReached": [],
+      "captures": [
+        {
+          "id": "step-2",
+          "artifact": "/Users/avinash/loomtide-runs/LoomtideGames/CountTheFruits/.loomtide/replays/reports/ctf-full-playthrough/actual/step-2.png",
+          "sha256": "85d32c2e2ba96d797388da2abb01973745027681f07fdc6f8b97ff8ac0ef9f36",
+          "visualStatus": "no-baseline"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "status": "blocked",
+      "anchorsReached": [],
+      "captures": [
+        {
+          "id": "step-3",
+          "artifact": "/Users/avinash/loomtide-runs/LoomtideGames/CountTheFruits/.loomtide/replays/reports/ctf-full-playthrough/actual/step-3.png",
+          "sha256": "8e66fc10a204abc77ccd2fe4789881b79c9dc531a18300b42a06ba058a312bfb",
+          "visualStatus": "no-baseline"
+        }
+      ]
+    }
+  ],
+  "assertions": [],
+  "console": {
+    "status": "pass",
+    "errorCount": 0,
+    "errors": []
+  },
+  "startedAt": "2026-06-07T07:18:11.721Z",
+  "finishedAt": "2026-06-07T07:18:13.733Z",
+  "durationMs": 2012
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Replay report: ctf-observed-human</title>
+<style>
+  :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1f2328; }
+  body { margin: 0 auto; max-width: 980px; padding: 24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .badge { display: inline-block; color: #fff; padding: 2px 10px; border-radius: 12px; font-weight: 600; font-size: 13px; background: #1a7f37; }
+  .meta { color: #57606a; font-size: 13px; margin: 8px 0 20px; }
+  section { border: 1px solid #d0d7de; border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+  section h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: #57606a; margin: 0 0 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eaeef2; vertical-align: top; }
+  table.kv td:first-child { color: #57606a; width: 110px; }
+  code { background: #f6f8fa; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  .status-pass { color: #1a7f37; font-weight: 600; }
+  .status-fail, .status-not_reached { color: #cf222e; font-weight: 600; }
+  .status-blocked { color: #9a6700; font-weight: 600; }
+  .status-unknown { color: #57606a; font-weight: 600; }
+  .gallery { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  figure { margin: 0; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; }
+  .frames { display: flex; gap: 1px; background: #d0d7de; }
+  .frame { flex: 1; position: relative; background: #fff; }
+  .frame img { width: 100%; display: block; }
+  .frame span { position: absolute; top: 4px; left: 4px; font-size: 11px; background: rgba(0,0,0,.6); color: #fff; padding: 1px 6px; border-radius: 4px; }
+  figcaption { padding: 8px; font-size: 12px; color: #57606a; }
+  .missing { padding: 40px; text-align: center; color: #cf222e; background: #fff5f5; }
+  .vstatus { font-weight: 600; padding: 1px 6px; border-radius: 10px; font-size: 11px; }
+  .vstatus-match { color: #1a7f37; background: #eaffea; }
+  .vstatus-drift { color: #cf222e; background: #fff5f5; }
+  .vstatus-none { color: #57606a; background: #f6f8fa; }
+</style>
+</head>
+<body>
+  <h1>ctf-observed-human <span class="badge">PASS</span></h1>
+  <div class="meta">
+    reset: <code>scene-load</code> ·
+    2026-06-07T05:30:18.436Z → 2026-06-07T05:30:20.722Z · 2285 ms
+  </div>
+  
+  <section><h2>Segments</h2><table><thead><tr><th>segment</th><th>status</th><th>anchors reached</th><th>captures</th></tr></thead><tbody><tr>
+        <td><code>observed</code></td>
+        <td class="status-pass">pass</td>
+        <td>—</td>
+        <td>—</td>
+      </tr></tbody></table></section>
+  <section><h2>Assertions</h2><table><tbody><tr><td colspan="2">— none —</td></tr></tbody></table></section>
+  <section><h2>Console</h2><p class="status-pass">pass · 0 error(s)</p></section>
+  <section><h2>Captures</h2><div class="gallery"><p>— no captures —</p></div></section>
+</body>
+</html>
