@@ -1,0 +1,14 @@
+{
+  "game": "Shape Match",
+  "mode": "generated",
+  "status": "approved",
+  "approvedAt": "2026-06-07",
+  "approvedBy": "avinash",
+  "aspect": "16:9",
+  "resolution": "1280x720",
+  "pngSha256": "c170f438062cfc8322ae7a82c531c015feda8b4f4d36cbeb6b07983d6d0d1e1e",
+  "png": "hero-shot.png",
+  "html": "hero-shot.html",
+  "offPipeline": true,
+  "note": "Off-pipeline kids matching game (not platformer-2d). Built to this frozen hero shot; verified via screenshots + play-test through the MCP bridge. Separate scene from CountTheFruits; CountTheFruits untouched."
+}
