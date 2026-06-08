@@ -8,7 +8,7 @@
 - **Design target:** `approved`
 - **Current build:** _(none — no build in flight)_
 - **Last verdict:** _(none yet — run `loomtide verify`)_
-- **Updated:** 2026-06-05T14:43:14.981Z
+- **Updated:** 2026-06-07T12:15:34.399Z
 
 **Next action:** Design Target approved — run `loomtide build` to build the next planned slice.
 
@@ -20,4 +20,4 @@
 - `verified-warn` — last `verify` had warnings, no hard failures.
 - `verified-failing` — last `verify` failed; the build is NOT done.
 
-<!-- loomtide-state: {"genre":"platformer-2d","engine":"unity","phase":"planned","designTarget":"approved","lastVerdict":null,"updatedAt":"2026-06-05T14:43:14.981Z"} -->
+<!-- loomtide-state: {"genre":"platformer-2d","engine":"unity","phase":"planned","designTarget":"approved","lastVerdict":null,"updatedAt":"2026-06-07T12:15:34.399Z"} -->
