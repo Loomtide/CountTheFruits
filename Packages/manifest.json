@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.loomtide.unitybridge": "file:/Users/avinash/Projects/AI/Loomtide/.worktrees/replay-verification-doc/packages/com.loomtide.unitybridge",
+    "com.loomtide.unitybridge": "file:/Users/avinash/Projects/AI/Loomtide/packages/com.loomtide.unitybridge",
     "com.unity.2d.pixel-perfect": "5.0.3",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.inputsystem": "1.7.0",
