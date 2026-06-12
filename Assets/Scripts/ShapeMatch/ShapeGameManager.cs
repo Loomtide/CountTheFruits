@@ -70,7 +70,8 @@ namespace ShapeMatch
         {
             Running = false;
             StopAllCoroutines();
-            SetState(true, false, false, false);
+            // home stays visible: in the Kids Adventure package it returns to the hub
+            SetState(true, false, false, true);
         }
 
         /// <summary>Begin a fresh playthrough (Play / Play Again).</summary>

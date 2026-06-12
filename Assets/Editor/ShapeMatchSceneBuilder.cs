@@ -202,13 +202,12 @@ public static class ShapeMatchSceneBuilder
         Place(againTxt, C(0.5f, 0.5f), new Vector2(0, 4), new Vector2(320, 110));
         var againMenu = again.gameObject.AddComponent<ShapeMenuButton>(); againMenu.action = ShapeMenuButton.Action.PlayAgain;
 
-        // ============ HOME BUTTON (shared: rounds + reward) ============
-        var home = Img("HomeButton", root, Load(Art + "hud/card_white.png"));
-        home.type = Image.Type.Sliced;
+        // ============ HOME BUTTON (always visible; same look/spot as Kids Chef) ============
+        var home = Img("HomeButton", root, Load(Art + "chef/btn_round_pink.png"));
         var hrt = home.rectTransform; hrt.anchorMin = hrt.anchorMax = new Vector2(0, 1); hrt.pivot = new Vector2(0, 1);
-        hrt.sizeDelta = new Vector2(78, 78); hrt.anchoredPosition = new Vector2(26, -26);
+        hrt.sizeDelta = new Vector2(88, 88); hrt.anchoredPosition = new Vector2(24, -24);
         var hicon = Img("Icon", home.transform, Load(Art + "ui/home_icon.png"));
-        Place(hicon, C(0.5f, 0.5f), new Vector2(0, 0), new Vector2(42, 42)); hicon.raycastTarget = false;
+        Place(hicon, C(0.5f, 0.5f), new Vector2(0, 2), new Vector2(46, 46)); hicon.raycastTarget = false;
         var homeMenu = home.gameObject.AddComponent<ShapeMenuButton>(); homeMenu.action = ShapeMenuButton.Action.Home;
 
         // ============ CONFETTI LAYER (on top) ============
@@ -246,7 +245,7 @@ public static class ShapeMatchSceneBuilder
         // initial visibility — Start screen up
         gameplay.SetActive(false);
         reward.SetActive(false);
-        home.gameObject.SetActive(false);
+        home.gameObject.SetActive(true);   // Home stays available on every screen
         start.SetActive(true);
 
         EditorSceneManager.MarkSceneDirty(scene);
