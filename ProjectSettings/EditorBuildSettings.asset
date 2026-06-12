@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShapeMatch.unity
     guid: e905e0937dd594422ba337cbe5052bd2
+  - enabled: 1
+    path: Assets/Scenes/KidsChef.unity
+    guid: a35cc7310fa3e4172b417c1c6d6ead72
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

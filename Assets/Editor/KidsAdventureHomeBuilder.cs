@@ -155,16 +155,20 @@ public static class KidsAdventureHomeBuilder
         IconImg(cluster2, "Circle", Art + "shapematch/circle_coral.png", new Vector2(-78, -12), new Vector2(78, 78), 0f);
         IconImg(cluster2, "Square", Art + "shapematch/square_blue.png", new Vector2(76, -14), new Vector2(76, 76), 8f);
         IconImg(cluster2, "Star", Art + "shapematch/star_gold.png", new Vector2(0, 14), new Vector2(106, 106), 0f);
-        // NEW badge
-        var badge = Img("NewBadge", t2.transform, Load(Home + "new_badge.png"));
+
+        // --- Kids Chef ---
+        var t3 = Tile(tiles.transform, "Tile_KidsChef", new Vector2(-262, -212), "Kids Chef",
+                      Art + "chef/pill_gold.png", "KidsChef", false, sfx, tapClip, lockedClip, out var cluster3);
+        IconImg(cluster3, "Waffle", Art + "chef/waffle_single.png", new Vector2(0, 4), new Vector2(104, 104), -6f);
+        IconImg(cluster3, "Strawberry", Art + "chef/strawberry.png", new Vector2(-66, -22), new Vector2(64, 70), -10f);
+        IconImg(cluster3, "Cream", Art + "chef/cream.png", new Vector2(64, -20), new Vector2(64, 61), 8f);
+        // NEW badge (the newest game in the package)
+        var badge = Img("NewBadge", t3.transform, Load(Home + "new_badge.png"));
         Place(badge, C(0.5f, 0.5f), new Vector2(132, 86), new Vector2(86, 86));
         badge.raycastTarget = false;
         var bb = badge.gameObject.AddComponent<HomeBob>(); bb.amplitude = 0f; bb.scalePulse = 0.12f; bb.speed = 2.6f;
 
-        // --- Coming Soon x2 ---
-        var t3 = Tile(tiles.transform, "Tile_ComingSoon1", new Vector2(-262, -212), "Coming Soon",
-                      Home + "pill_grey.png", "", true, sfx, tapClip, lockedClip, out var cluster3);
-        IconImg(cluster3, "Lock", Home + "lock.png", new Vector2(0, 0), new Vector2(92, 108), 0f);
+        // --- Coming Soon ---
         var t4 = Tile(tiles.transform, "Tile_ComingSoon2", new Vector2(262, -212), "Coming Soon",
                       Home + "pill_grey.png", "", true, sfx, tapClip, lockedClip, out var cluster4);
         IconImg(cluster4, "Lock", Home + "lock.png", new Vector2(0, 0), new Vector2(92, 108), 0f);
@@ -191,6 +195,7 @@ public static class KidsAdventureHomeBuilder
             new EditorBuildSettingsScene("Assets/Scenes/KidsAdventure.unity", true),
             new EditorBuildSettingsScene("Assets/Scenes/CountTheFruits.unity", true),
             new EditorBuildSettingsScene("Assets/Scenes/ShapeMatch.unity", true),
+            new EditorBuildSettingsScene("Assets/Scenes/KidsChef.unity", true),
         };
 
         AssetDatabase.SaveAssets();
