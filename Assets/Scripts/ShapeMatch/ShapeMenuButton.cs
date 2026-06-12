@@ -50,7 +50,14 @@ namespace ShapeMatch
             switch (action)
             {
                 case Action.Play: manager.StartGame(); break;
-                case Action.Home: manager.GoHome(); break;
+                case Action.Home:
+                    // In the Kids Adventure package, Home returns to the hub scene;
+                    // standalone it falls back to this game's own Start screen.
+                    if (Application.CanStreamedLevelBeLoaded("KidsAdventure"))
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("KidsAdventure");
+                    else
+                        manager.GoHome();
+                    break;
                 case Action.PlayAgain: manager.Restart(); break;
             }
         }
