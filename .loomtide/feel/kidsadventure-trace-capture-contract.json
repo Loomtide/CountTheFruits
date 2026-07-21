@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1",
+  "game": "KidsAdventure",
+  "subjects": [
+    {
+      "id": "home",
+      "role": "mini-game hub",
+      "locator": {
+        "scene": "Assets/Scenes/KidsAdventure.unity",
+        "path": "/Canvas"
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "id": "home-to-count",
+      "kind": "trace-replay",
+      "traceId": "kidsadventure-home-to-count"
+    }
+  ],
+  "metrics": [
+    {
+      "metric": "traceDurationMs",
+      "interactionId": "home-to-count",
+      "derivation": "trace"
+    }
+  ]
+}
