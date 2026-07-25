@@ -1,4 +1,4 @@
-# Design Target (`.loomtide/design/`)
+# Design Target (`.loombridge/design/`)
 
 This folder holds the **Design Target** (plan §3c): the visual contract `build` is
 measured against. Drop the **annotated hero shot** here:

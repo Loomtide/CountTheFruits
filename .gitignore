@@ -13,12 +13,12 @@
 # OS
 .DS_Store
 
-# Loomtide local
-.loomtide-fixtures/
-.loomtide/reports/
-.loomtide/traces/
-.loomtide/verify/
-.loomtide/captures/
+# Loombridge local
+.loombridge-fixtures/
+.loombridge/reports/
+.loombridge/traces/
+.loombridge/verify/
+.loombridge/captures/
 trace/
 
 # Claude Code local agent state

@@ -14,7 +14,7 @@
 
 ## Phases
 
-- `planned` — `.loomtide/` contract exists; nothing built/verified yet.
+- `planned` — `.loombridge/` contract exists; nothing built/verified yet.
 - `built-unverified` — a build ran but `verify` has not confirmed it.
 - `verified-green` — last `verify` passed all gates.
 - `verified-warn` — last `verify` had warnings, no hard failures.

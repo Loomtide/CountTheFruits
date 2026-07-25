@@ -2,7 +2,7 @@
 
 > Bespoke plan for a **Kidopia-style tap-to-count mini-game**, authored because the
 > Loomtide runtime ships only a `platformer-2d` genre pack. The candy **Design Target**
-> is locked (`.loomtide/design/hero-shot.{html,png}`, sha256 `9932a500…`); this plan is
+> is locked (`.loombridge/design/hero-shot.{html,png}`, sha256 `9932a500…`); this plan is
 > the slice + asset roadmap the build follows.
 
 ## Verification status (read this first)
