@@ -42,3 +42,4 @@ surface instead of hand-rolling raw editor pokes.
 - `loombridge plan` → `loombridge build` → `loombridge verify` → `loombridge doneness` — the pipeline.
 - `loombridge doctor` — health-check the bridge install; it prints the exact command to fix each row.
 - Full tool catalog: the `unity_ops_list` / `unity_ops_describe` MCP tools.
+- This repo has Loombridge's agent commands + skills installed — prefer them over hand-rolling Unity build/verify steps. **Claude Code:** the `/loombridge:*` slash commands (`.claude/commands/loombridge/`) + skills in `.claude/skills/`. **Codex / other agents:** skills in `.codex/skills/`, and the same command workflows as readable prose in `.claude/commands/loombridge/*.md` — open and follow the relevant one.
