@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "installedAt": "2026-07-28T03:20:07.890Z",
+  "installedAt": "2026-07-28T05:10:01.995Z",
   "cliVersion": "0.1.0",
   "bridgeVersion": "0.1.0",
   "bridgeProtocol": 1,
   "installMode": "tarball-dependency",
   "packageId": "com.loomtide.loombridge",
   "tarball": "tarballs/com.loomtide.loombridge-0.1.0.tgz",
-  "tarballSha256": "529e6d9009bf9b67040f32f9e238f111d531f5cdc08d6c1fd44bda9d6634429f",
+  "tarballSha256": "ea0895eafa3c0fa959e4c04f1058b59ef6f1aa95938a28963c0c962100cb4922",
   "routingDoc": {
     "relpath": "LOOMBRIDGE.md",
     "version": 2,
-    "action": "updated"
+    "action": "unchanged"
   },
   "agentSurface": {
     "state": "enabled",
     "cliVersion": "0.1.0",
-    "installedAt": "2026-07-28T03:20:07.884Z",
+    "installedAt": "2026-07-28T05:10:01.989Z",
     "files": [
       {
         "path": ".claude/commands/loombridge/build.md",
