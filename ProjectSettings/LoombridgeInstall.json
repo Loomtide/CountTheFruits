@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "installedAt": "2026-07-29T07:15:22.212Z",
+  "installedAt": "2026-07-29T07:47:53.346Z",
   "cliVersion": "0.1.0",
   "bridgeVersion": "0.1.0",
   "bridgeProtocol": 1,
   "installMode": "tarball-dependency",
   "packageId": "com.loomtide.loombridge",
   "tarball": "tarballs/com.loomtide.loombridge-0.1.0.tgz",
-  "tarballSha256": "9946c02e205c7487c7701003c07c386f443fa634d14f5b80160685011c0cfb5d",
+  "tarballSha256": "d77ae358cc9411bf3679b35c0668315365a971fd01610c2d9c9a0577e120ae96",
   "routingDoc": {
     "relpath": "LOOMBRIDGE.md",
     "version": 3,
-    "action": "updated"
+    "action": "unchanged"
   },
   "agentSurface": {
     "state": "enabled",
     "cliVersion": "0.1.0",
-    "installedAt": "2026-07-28T05:10:01.989Z",
+    "installedAt": "2026-07-29T07:47:12.524Z",
     "files": [
       {
         "path": ".claude/commands/loombridge/build.md",
@@ -32,7 +32,7 @@
       },
       {
         "path": ".claude/commands/loombridge/verify.md",
-        "sha256": "94b2f3bc60b004a493dd922ed016f477630c8397782594d583d50eefb37a7e71"
+        "sha256": "341612cb2235f65f52d0a33a6f27fbd7db3888c99d7c0e40426952fcdd12b005"
       },
       {
         "path": ".claude/skills/asset-layer/references/2d-platformer.md",
@@ -340,11 +340,11 @@
       },
       {
         "path": ".claude/skills/verify-2d-game/SKILL.md",
-        "sha256": "e9efd99c3b222913f8c9f73a83b6395e2bd357cceb21298efa9c94aa7879db38"
+        "sha256": "7593265113d91d215bfc18c67fdc3d50775821804622d15ec57ada34c51ec5b8"
       },
       {
         "path": ".codex/skills/verify-2d-game/SKILL.md",
-        "sha256": "e9efd99c3b222913f8c9f73a83b6395e2bd357cceb21298efa9c94aa7879db38"
+        "sha256": "7593265113d91d215bfc18c67fdc3d50775821804622d15ec57ada34c51ec5b8"
       },
       {
         "path": ".claude/.gitattributes",
