@@ -8,7 +8,7 @@ Use this skill to turn the human review pass — "the font is wrong, the player 
 
 ## When to invoke
 
-After the game builds and plays. You need an **acceptance contract** at `.loombridge/ACCEPTANCE.json` (seeded by `loombridge plan`; authored from the design mock + the locked feel doc). If none exists, run `loombridge plan` first — it will refuse to complete without an approved Design Target, which is the right gate (see `references/report-schema.md` for the contract sections and `<internal schema — validated by `loombridge plan`>` for the schema).
+After the game builds and plays. You need an **acceptance contract** at `.loombridge/ACCEPTANCE.json` (seeded by `loombridge plan`; authored from the design mock + the locked feel doc). If none exists, run `loombridge plan --genre <id>` first (bare `plan` REFUSES to guess the genre; for a genre with no shipped pack, `loombridge genre init --genre <your-id> --class <twitch|systems|hybrid>` then `loombridge plan --brief .loombridge`). It will refuse to complete without an approved Design Target, which is the right gate (see `references/report-schema.md` for the contract sections and `<internal schema — validated by `loombridge plan`>` for the schema).
 
 ## Principles
 
@@ -93,12 +93,12 @@ The speed runner does not cover the static / pre-play / structural gates. Drive 
 | `ui-scan.json` | `unity_ui_scan_text_components { locator: "/Canvas" }` (HUD root) **+ a `canvas` block** (Canvas render mode/camera + `PixelPerfectCamera.upscaleRT` via `unity_component_get_properties`) for the blurry-HUD check | ui-conformance | `references/ui-conformance.md`, `references/framing-checks.md` |
 | `screen-rects.json` | `unity_scene_get_screen_rects { locators: [player, goal, hazards, HUD labels…] }` in PLAY mode | framing | `references/framing-checks.md` |
 | `placement.json` | `unity_scene_get_bounds` per ground (`minX`,`maxX`,`topY`) + grounded item (`visibleBottomY`/`surfaceTopY`) + overscan-aware `cameraFrame` | placement | `references/framing-checks.md` |
-| `playability.json` | assembled from `unity_runtime_probe` (multi-driver) + `unity_runtime_assert_condition` — drive don't teleport | playability | `references/playability-checks.md` |
+| `playability.json` | **`loombridge capture --slice <playability slice>`**: the CLI observer opens an in-game-loop recording window, prints a machine-readable `DRIVE NOW` line (you play the level from your own connection), then derives every headline field from the recording plus its own post-win probes (needs `harness.playability` in the contract). A hand-assembled file is now CAPPED AT WARN and can never pass. | playability | `references/playability-checks.md` |
 | `coverage.json` | play-mode "soak" then `unity_scene_get_bounds` per parallax layer + camera frame | coverage | `references/framing-checks.md` |
 | `reachability.json` | `unity_scene_get_bounds` per platform/launcher/collectible (jump/dash/trampoline envelope) | reachability | `references/playability-checks.md` |
 | `platform-tiles.json` | Platformer terrain construction: tile counts, row roles, collider top vs visible top | platform-tiles | `platformer-level-design/SKILL.md` |
 | `objects.json` | Per-prop bounds + components for the prop-purpose gate | prop-purpose | `references/acceptance-gates.md` |
-| `feel.json` | FeelHarness + `unity_runtime_probe` recipes (assembled) | feel | `references/feel-checks.md` |
+| `feel.json` | **`loombridge capture --slice <feel slice>`**: the CLI feel recipe drives run/jump/short-hop/coyote/jump-buffer/dash and writes the file from the op echoes (needs `harness.feelSeam` in the contract). Never hand-assembled. | feel | `references/feel-checks.md` |
 | `vlm-review.json` (advisory, but required to run) | **independent adversarial ensemble** (≥2 fresh-context reviewers) scoring **play-mode, HUD-visible** frames vs the mock, **flags unioned**, passed to verify via `--vlm` | reviewFindings | `references/vlm-review.md` |
 
 Missing files degrade to a WARN gate, so a partial run still produces a useful verdict. Save the op's `content[].text` JSON verbatim.

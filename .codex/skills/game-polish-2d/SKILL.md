@@ -40,8 +40,20 @@ tune toward the profile's bands.
    fallbacks.
 3. Set project `Time.fixedDeltaTime` to the contract value, usually `0.0166667`, before measuring.
 4. Assign a frictionless `PhysicsMaterial2D` to the player body/collider.
-5. Measure with `FeelHarness` and `runtime.probe`; final `feel.json` must include
-   `provenance.sources[]`.
+5. Measure with `loombridge capture --slice player-feel`: the CLI's feel recipe drives the
+   canonical measurements and WRITES `feel.json` from the op echoes. Declare the controller
+   seam once in `ACCEPTANCE.json` under `harness.feelSeam` (player locator, controller
+   component, the input-reader component to disable, the drive field names, the keys); the
+   recipe refuses and prints the exact JSON when it is absent. If a hazard sits inside the
+   run leg's default 10.5-unit runway, add `runLeg: { ticks, direction }` to that block.
+   Otherwise the run leg drives the player into it, and a game that ends the session on
+   death leaves the remaining legs measuring a corpse. `runLeg` does not bound the coyote
+   calibration walk, which must leave the ground and hunts for the ledge under its own cap.
+   Also declare `fields.grounded` (the controller's public ground-probe bool) when the
+   controller has one: it makes `coyoteTime` exact instead of short by the rig's
+   probe-vs-collider overhang, and the evidence records which anchor was used. Do NOT hand-author
+   `feel.json`: the gates re-derive its headline numbers from the raw evidence it carries,
+   so a typed value is refused, not graded.
 6. Tune with the reference configs:
    - `references/tuning-run-speed.md`
    - `references/tuning-jump-apex.md`
