@@ -17,7 +17,6 @@
 .loombridge-fixtures/
 .loombridge/reports/
 .loombridge/traces/
-.loombridge/verify/
 .loombridge/captures/
 trace/
 
@@ -26,3 +25,6 @@ trace/
 
 # Local MCP bridge config (machine-specific absolute paths)
 .mcp.json
+
+# Loombridge: the re-derivable tier. Everything else under .loombridge/ is committed.
+.loombridge/run/*

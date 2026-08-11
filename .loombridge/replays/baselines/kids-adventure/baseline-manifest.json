@@ -3,66 +3,14 @@
   "schemaVersion": "1",
   "traceId": "kids-adventure",
   "traceSha256": "da4b94911dd57e0092ed017be2a91bbad31fa858e73314c675cd43bb4a8c0b4b",
-  "approvedAt": "2026-08-11T08:11:07.819Z",
-  "sourceReportSha256": "df6552ecf1349618654c56e59d3066bc286e6c6634699deb19d3bd9c577e4bf3",
+  "approvedAt": "2026-08-11T18:29:53.467Z",
+  "sourceReportSha256": "artifact-storage-s2",
   "pngs": [
     {
-      "captureId": "step-1",
-      "sha256": "23247c6c286efe76dc45be64b2b1cf2db30be125acdefa2f2812e408a58185e4"
-    },
-    {
-      "captureId": "step-2",
-      "sha256": "ba4bb25a2c936ea461f38effad9f6a49b13a4693ea432d17399d7b0459046f7a"
-    },
-    {
-      "captureId": "step-3",
-      "sha256": "e0db17734d1478e37a5bce7196cc25718d7f611a55edd5a93b662fb5333cf4c0"
-    },
-    {
-      "captureId": "step-4",
-      "sha256": "4a7f905c6b2e0064eb94565935513d4eb2b15b5bf10e95ee3a78e9f01fdda3a7"
-    },
-    {
-      "captureId": "step-5",
-      "sha256": "1dee2c9984b5081f2b4c9ccd1240aa6ca9ac218ec836a5527b564bd142f63c7a"
-    },
-    {
-      "captureId": "step-6",
-      "sha256": "7da8e2bf4046fe5b6d99e97500916aa4a467bda32b4f535bc17877c6b2301276"
-    },
-    {
-      "captureId": "step-7",
-      "sha256": "80dad85f8eae751d3438965a0d0368cf3feeb25cd4d3c0dabb5395954c0e91bd"
-    },
-    {
-      "captureId": "step-8",
-      "sha256": "288af7a765442e88446bccf822fe205b75457a3216d317bb23eb80138c7f8435"
-    },
-    {
-      "captureId": "step-9",
-      "sha256": "1571b237c6678e8e08e125257db0ad3bdc7dc2743ae701e26b7acb78fc5b9d04"
-    },
-    {
-      "captureId": "step-10",
-      "sha256": "921c37a1f58a6ee943b2573239881ca61b5440e5a554f87ca33ec27fc6b39970"
-    },
-    {
-      "captureId": "step-11",
-      "sha256": "3631d2056289fe66a3a58c517cff55b7a7acc5c6e6e1cd8d435d6ed15805407b"
-    },
-    {
-      "captureId": "step-12",
-      "sha256": "2ba0624a63a940e2c84b2441aff88b70f5033b974438c42cef8a663aabbb69d7"
-    },
-    {
-      "captureId": "step-13",
-      "sha256": "e9d5bd1b58f719cd7bb918274c5b967ee620b9896b9b6392fb1628674ea41d7f"
-    },
-    {
-      "captureId": "step-14",
-      "sha256": "7d6a2471b056338d2797f63a39953d425f40418b484c2227cdf3877b5558cda8"
+      "captureId": "THIS-PROJECT-WAS-MIGRATED-the-approved-baseline-moved-to-.loombridge-anchors-baselines-UPGRADE-YOUR-CLI",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
     }
   ],
-  "approvalCount": 1,
-  "replaySpeed": 2
+  "loombridgeLayoutTombstone": "artifact-storage-s2",
+  "readThis": "THIS IS NOT AN APPROVED BASELINE. It is a tombstone left by loombridge migrate-layout; the approved frames are at .loombridge/anchors/baselines/kids-adventure/. Upgrade the CLI on this machine."
 }

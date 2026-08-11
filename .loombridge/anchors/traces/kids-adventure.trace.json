@@ -1,0 +1,565 @@
+{
+  "schemaVersion": "0.1",
+  "id": "kids-adventure",
+  "start": {
+    "scene": "Assets/Scenes/KidsAdventure.unity",
+    "reset": "scene-load"
+  },
+  "input": {
+    "backend": "ui-events"
+  },
+  "segments": [
+    {
+      "id": "step-1",
+      "scene": "KidsAdventure",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/Tiles/Tile_KidsChef"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/Canvas/Tiles/Tile_KidsChef"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-1",
+          "settleMs": 1974.6646900000005
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/MixPanel/Ingredient_milk"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Ingredients"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/MixPanel/Ingredient_milk"
+          },
+          "to": {
+            "path": "/Canvas/MixPanel/MixZone"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-2",
+          "settleMs": 1394.4699999999993
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/MixPanel/Ingredient_egg"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Ingredients"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/MixPanel/Ingredient_egg"
+          },
+          "to": {
+            "path": "/Canvas/MixPanel/MixZone"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-3",
+          "settleMs": 1020.451
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/MixPanel/Ingredient_sugar"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Ingredients"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/MixPanel/Ingredient_sugar"
+          },
+          "to": {
+            "path": "/Canvas/MixPanel/MixZone"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-4",
+          "settleMs": 1056.6096200000002
+        }
+      ]
+    },
+    {
+      "id": "step-5",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/MixPanel/Ingredient_honey"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Ingredients"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/MixPanel/Ingredient_honey"
+          },
+          "to": {
+            "path": "/Canvas/MixPanel/MixZone"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-5",
+          "settleMs": 951.5613800000001
+        }
+      ]
+    },
+    {
+      "id": "step-6",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/MixPanel/Ingredient_banana"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Ingredients"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/MixPanel/Ingredient_banana"
+          },
+          "to": {
+            "path": "/Canvas/MixPanel/MixZone"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-6",
+          "settleMs": 1131.6630000000005
+        }
+      ]
+    },
+    {
+      "id": "step-7",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/MixPanel/MixZone"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Stir"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/MixPanel/MixZone"
+          },
+          "to": {
+            "path": "/Canvas/MixPanel/MixZone"
+          },
+          "travelPx": 5064.15234,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.590625,
+            "y": 0.5888889
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-7",
+          "settleMs": 2867.116
+        }
+      ]
+    },
+    {
+      "id": "step-8",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/CookPanel/Ingredient_spray"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Spray"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/CookPanel/Ingredient_spray"
+          },
+          "to": {
+            "path": "/Canvas/CookPanel/Ingredient_spray"
+          },
+          "travelPx": 511.492,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.344531238,
+            "y": 0.297222227
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-8",
+          "settleMs": 1918.2392
+        }
+      ]
+    },
+    {
+      "id": "step-9",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/CookPanel/Ingredient_pour"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Pour"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/CookPanel/Ingredient_pour"
+          },
+          "to": {
+            "path": "/Canvas/CookPanel/Ingredient_pour"
+          },
+          "travelPx": 596.9051,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.385156244,
+            "y": 0.308333337
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-9",
+          "settleMs": 1982.7549
+        }
+      ]
+    },
+    {
+      "id": "step-10",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/CookPanel/PowerButton"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Power"
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/Canvas/CookPanel/PowerButton"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-10",
+          "settleMs": 3000
+        }
+      ]
+    },
+    {
+      "id": "step-11",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_strawberry"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_strawberry"
+          },
+          "to": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_strawberry"
+          },
+          "travelPx": 403.325867,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.4734375,
+            "y": 0.470833331
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-11",
+          "settleMs": 940.165399999998
+        }
+      ]
+    },
+    {
+      "id": "step-12",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
+          },
+          "to": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
+          },
+          "travelPx": 326.8586,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.555468738,
+            "y": 0.358333319
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-12",
+          "settleMs": 648.5565999999999
+        }
+      ]
+    },
+    {
+      "id": "step-13",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
+          },
+          "to": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
+          },
+          "travelPx": 312.414124,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.625,
+            "y": 0.422222227
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-13",
+          "settleMs": 736.8163999999997
+        }
+      ]
+    },
+    {
+      "id": "step-14",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/DoneButton"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "tap",
+          "locator": {
+            "path": "/Canvas/DecorPanel/DoneButton"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-14",
+          "settleMs": 3000
+        }
+      ]
+    }
+  ],
+  "outcome": {
+    "expected": "success"
+  }
+}
