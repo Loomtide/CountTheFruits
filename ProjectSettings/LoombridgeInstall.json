@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "installedAt": "2026-08-10T12:43:21.951Z",
+  "installedAt": "2026-08-11T08:00:00.009Z",
   "cliVersion": "0.2.0",
   "bridgeVersion": "0.2.0",
   "bridgeProtocol": 1,
   "installMode": "tarball-dependency",
   "packageId": "com.loomtide.loombridge",
   "tarball": "tarballs/com.loomtide.loombridge-0.2.0.tgz",
-  "tarballSha256": "11f62e6386cb6602217e4c3ce2396689fcb2c80f7701480eda716af70163b1cc",
+  "tarballSha256": "57d54e9c00695a8515cb6615c2b1896c8165d42912aaaef549ad74a39bff6b9b",
   "routingDoc": {
     "relpath": "LOOMBRIDGE.md",
     "version": 4,
-    "action": "updated"
+    "action": "unchanged"
   },
   "agentSurface": {
     "state": "enabled",
     "cliVersion": "0.2.0",
-    "installedAt": "2026-08-10T12:43:21.932Z",
+    "installedAt": "2026-08-11T07:59:59.993Z",
     "files": [
       {
         "path": ".claude/commands/loombridge/build.md",
@@ -32,7 +32,7 @@
       },
       {
         "path": ".claude/commands/loombridge/verify.md",
-        "sha256": "163d10eed2afe16f883d0e159c0f3bf3603d48f4bcb6faf1354c2f5da20a1114"
+        "sha256": "e3589661148d1dcfa6c49ace6e7269b6c24d9f05504b9c798f73b946ab0384c9"
       },
       {
         "path": ".claude/skills/asset-layer/references/2d-platformer.md",
