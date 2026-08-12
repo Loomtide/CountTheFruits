@@ -1,8 +1,0 @@
-{
-  "loombridgeLayoutTombstone": "artifact-storage-s2",
-  "migratedAt": "2026-08-11T18:29:53.467Z",
-  "readThis": "THIS IS NOT A RECORDED DEMONSTRATION. It is a tombstone left by loombridge migrate-layout so an older Loombridge CLI reports a BROKEN anchor here instead of reporting NO anchor and telling you to record a new one.",
-  "theRealTraceIsAt": ".loombridge/anchors/traces/kids-adventure.trace.json",
-  "whatToDo": "Upgrade the CLI on this machine. Do NOT run `loombridge trace record` for this id: a recorded demonstration cannot be regenerated without a human replaying the game, and the real one is at the path above.",
-  "doNotDelete": "Deleting this file makes an older CLI print the on-ramp again, which asks a human to re-record the demonstration you still have."
-}
