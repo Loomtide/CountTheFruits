@@ -2,67 +2,70 @@
   "kind": "trace-baseline",
   "schemaVersion": "1",
   "traceId": "kids-adventure",
-  "traceSha256": "da4b94911dd57e0092ed017be2a91bbad31fa858e73314c675cd43bb4a8c0b4b",
-  "approvedAt": "2026-08-11T08:11:07.819Z",
-  "sourceReportSha256": "df6552ecf1349618654c56e59d3066bc286e6c6634699deb19d3bd9c577e4bf3",
+  "traceSha256": "587590d680cee29e0174bf83a094a2d6a8de632b44d6f5a1b786545ac5791172",
+  "approvedAt": "2026-08-12T05:49:00.158Z",
+  "sourceReportSha256": "3d86a6245c254f7e8c110862796655975016f6b75c749365a7a81763e45d1c8b",
   "pngs": [
     {
       "captureId": "step-1",
-      "sha256": "23247c6c286efe76dc45be64b2b1cf2db30be125acdefa2f2812e408a58185e4"
+      "sha256": "cd998548a9b45acb0610775386de555384cea6b1a15de188fa168ddc2594b979"
     },
     {
       "captureId": "step-2",
-      "sha256": "ba4bb25a2c936ea461f38effad9f6a49b13a4693ea432d17399d7b0459046f7a"
+      "sha256": "a666424e5554ebe54fc89a19884f3abae49b17c7d2efa29e6577eb7fb0b81572"
     },
     {
       "captureId": "step-3",
-      "sha256": "e0db17734d1478e37a5bce7196cc25718d7f611a55edd5a93b662fb5333cf4c0"
+      "sha256": "51b3428f5f698f621fdbe46ea3f79fd6210b3cc00f64f591d6e85886ed6a62e7"
     },
     {
       "captureId": "step-4",
-      "sha256": "4a7f905c6b2e0064eb94565935513d4eb2b15b5bf10e95ee3a78e9f01fdda3a7"
+      "sha256": "16d2b2b282e9da7e38f1ce89725f557c8b19315cdf314923f14ccfe03868e05c"
     },
     {
       "captureId": "step-5",
-      "sha256": "1dee2c9984b5081f2b4c9ccd1240aa6ca9ac218ec836a5527b564bd142f63c7a"
+      "sha256": "5ba45c72db04bdf6d2192eb05d155384949917ed8643951e300668b055f1b0fd"
     },
     {
       "captureId": "step-6",
-      "sha256": "7da8e2bf4046fe5b6d99e97500916aa4a467bda32b4f535bc17877c6b2301276"
+      "sha256": "52564672987122413d3296ae924b2bfc78c7e549be0f59a78eb09d7aa2369291"
     },
     {
       "captureId": "step-7",
-      "sha256": "80dad85f8eae751d3438965a0d0368cf3feeb25cd4d3c0dabb5395954c0e91bd"
+      "sha256": "dcf9cb2f21c75975df020db29501c9aeff3e932e822c4e36249f2145a68ce663"
     },
     {
       "captureId": "step-8",
-      "sha256": "288af7a765442e88446bccf822fe205b75457a3216d317bb23eb80138c7f8435"
+      "sha256": "059076aefbeeaea2f9bff6d10c1a7078bf4161ac3211b0b39f8e5c81b3ed6966"
     },
     {
       "captureId": "step-9",
-      "sha256": "1571b237c6678e8e08e125257db0ad3bdc7dc2743ae701e26b7acb78fc5b9d04"
+      "sha256": "2e389f8370e7f816193d9ec2ce72c109b5290ee83f2e9b413cd6bd125c6f62f4"
     },
     {
       "captureId": "step-10",
-      "sha256": "921c37a1f58a6ee943b2573239881ca61b5440e5a554f87ca33ec27fc6b39970"
+      "sha256": "99555383d937f49d658e9617ca6515f8b93cb9e27a0d23e859a625491d892ffd"
     },
     {
       "captureId": "step-11",
-      "sha256": "3631d2056289fe66a3a58c517cff55b7a7acc5c6e6e1cd8d435d6ed15805407b"
+      "sha256": "d6f892c1e3e41207c9cf76483eb8b76c29277c66d6227fbc7fd47f34600a918f"
     },
     {
       "captureId": "step-12",
-      "sha256": "2ba0624a63a940e2c84b2441aff88b70f5033b974438c42cef8a663aabbb69d7"
+      "sha256": "158cd19502ee04f24d032b0372980c1465efe872af27276dd54e843887cbaf75"
     },
     {
       "captureId": "step-13",
-      "sha256": "e9d5bd1b58f719cd7bb918274c5b967ee620b9896b9b6392fb1628674ea41d7f"
+      "sha256": "4a443243a16fc6b1e8a44e9f2ade94c3b4a3e3c4e6a867cfb1904234a7514c84"
     },
     {
       "captureId": "step-14",
-      "sha256": "7d6a2471b056338d2797f63a39953d425f40418b484c2227cdf3877b5558cda8"
+      "sha256": "c35e031a96862e9ccfc292685f7832211047021d4fa4dcc834e65317a5014a92"
+    },
+    {
+      "captureId": "step-15",
+      "sha256": "bd98175f236ed5fddccd0d09d1b49be7f0125b2d48e0152539a5b38955392db7"
     }
   ],
-  "approvalCount": 1,
-  "replaySpeed": 2
+  "approvalCount": 1
 }

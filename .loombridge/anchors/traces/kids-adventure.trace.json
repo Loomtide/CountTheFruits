@@ -30,7 +30,7 @@
       "captures": [
         {
           "id": "step-1",
-          "settleMs": 1974.6646900000005
+          "settleMs": 1968.599697
         }
       ]
     },
@@ -68,7 +68,7 @@
       "captures": [
         {
           "id": "step-2",
-          "settleMs": 1394.4699999999993
+          "settleMs": 1013.37403
         }
       ]
     },
@@ -106,7 +106,7 @@
       "captures": [
         {
           "id": "step-3",
-          "settleMs": 1020.451
+          "settleMs": 749.9916999999996
         }
       ]
     },
@@ -144,7 +144,7 @@
       "captures": [
         {
           "id": "step-4",
-          "settleMs": 1056.6096200000002
+          "settleMs": 840.5004800000006
         }
       ]
     },
@@ -182,7 +182,7 @@
       "captures": [
         {
           "id": "step-5",
-          "settleMs": 951.5613800000001
+          "settleMs": 770.8332700000001
         }
       ]
     },
@@ -220,7 +220,7 @@
       "captures": [
         {
           "id": "step-6",
-          "settleMs": 1131.6630000000005
+          "settleMs": 1060.2779999999993
         }
       ]
     },
@@ -253,18 +253,18 @@
           "to": {
             "path": "/Canvas/MixPanel/MixZone"
           },
-          "travelPx": 5064.15234,
+          "travelPx": 3597.30981,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.590625,
-            "y": 0.5888889
+            "x": 0.463281244,
+            "y": 0.55694443
           }
         }
       ],
       "captures": [
         {
           "id": "step-7",
-          "settleMs": 2867.116
+          "settleMs": 2653.4180000000006
         }
       ]
     },
@@ -297,18 +297,18 @@
           "to": {
             "path": "/Canvas/CookPanel/Ingredient_spray"
           },
-          "travelPx": 511.492,
+          "travelPx": 625.5949,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.344531238,
-            "y": 0.297222227
+            "x": 0.288281262,
+            "y": 0.330555558
           }
         }
       ],
       "captures": [
         {
           "id": "step-8",
-          "settleMs": 1918.2392
+          "settleMs": 1889.9102000000003
         }
       ]
     },
@@ -341,18 +341,18 @@
           "to": {
             "path": "/Canvas/CookPanel/Ingredient_pour"
           },
-          "travelPx": 596.9051,
+          "travelPx": 743.216736,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.385156244,
-            "y": 0.308333337
+            "x": 0.333593756,
+            "y": 0.281944454
           }
         }
       ],
       "captures": [
         {
           "id": "step-9",
-          "settleMs": 1982.7549
+          "settleMs": 1943.1112999999987
         }
       ]
     },
@@ -420,18 +420,18 @@
           "to": {
             "path": "/Canvas/DecorPanel/TrayGroup/Topping_strawberry"
           },
-          "travelPx": 403.325867,
+          "travelPx": 391.558655,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.4734375,
-            "y": 0.470833331
+            "x": 0.461718738,
+            "y": 0.436111122
           }
         }
       ],
       "captures": [
         {
           "id": "step-11",
-          "settleMs": 940.165399999998
+          "settleMs": 781.5234000000019
         }
       ]
     },
@@ -464,18 +464,18 @@
           "to": {
             "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
           },
-          "travelPx": 326.8586,
+          "travelPx": 305.799927,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.555468738,
-            "y": 0.358333319
+            "x": 0.534375,
+            "y": 0.394444436
           }
         }
       ],
       "captures": [
         {
           "id": "step-12",
-          "settleMs": 648.5565999999999
+          "settleMs": 725.3652000000002
         }
       ]
     },
@@ -508,23 +508,67 @@
           "to": {
             "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
           },
-          "travelPx": 312.414124,
+          "travelPx": 276.1127,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.625,
-            "y": 0.422222227
+            "x": 0.540625,
+            "y": 0.479166657
           }
         }
       ],
       "captures": [
         {
           "id": "step-13",
-          "settleMs": 736.8163999999997
+          "settleMs": 903.3339999999989
         }
       ]
     },
     {
       "id": "step-14",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_cream"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_cream"
+          },
+          "to": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_cream"
+          },
+          "travelPx": 391.924774,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.5703125,
+            "y": 0.68194443
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-14",
+          "settleMs": 1109.2559
+        }
+      ]
+    },
+    {
+      "id": "step-15",
       "scene": "KidsChef",
       "actions": [
         {
@@ -553,7 +597,7 @@
       ],
       "captures": [
         {
-          "id": "step-14",
+          "id": "step-15",
           "settleMs": 3000
         }
       ]
