@@ -9,35 +9,22 @@
 *.csproj
 *.sln
 *.user
-*.unityproj
-*.pidb
-*.booproj
-*.svd
-*.pdb
-*.mdb
-*.opendb
-*.VC.db
-sysinfo.txt
-*.apk
-*.aab
-*.unitypackage
 
-# OS / editors
+# OS
 .DS_Store
-.vs/
-.idea/
-.vscode/
 
-# Python tooling (asset generators)
-__pycache__/
-*.pyc
+# Loombridge local
+.loombridge-fixtures/
+.loombridge/reports/
+.loombridge/traces/
+.loombridge/captures/
+trace/
 
 # Claude Code local agent state
 .claude/
 
-# LoomTide build tooling — not part of the shipped game
-.loomtide/
-.loomtide-fixtures/
+# Local MCP bridge config (machine-specific absolute paths)
 .mcp.json
-Packages/com.loomtide.*
-trace/
+
+# Loombridge: the re-derivable tier. Everything else under .loombridge/ is committed.
+.loombridge/run/*

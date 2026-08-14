@@ -1,0 +1,2 @@
+# Loombridge-managed — keep LF so the install ledger's sha matches on every OS (Windows core.autocrlf included).
+* text eol=lf

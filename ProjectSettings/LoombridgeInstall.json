@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "installedAt": "2026-08-14T11:58:54.432Z",
+  "cliVersion": "0.1.1",
+  "bridgeVersion": "0.1.1",
+  "bridgeProtocol": 1,
+  "installMode": "tarball-dependency",
+  "packageId": "com.loomtide.loombridge",
+  "tarball": "tarballs/com.loomtide.loombridge-0.1.1.tgz",
+  "tarballSha256": "1d173a94bb5862790025023aa9906cdd0a16ab79e151ad708940f1bef1cfadfc",
+  "routingDoc": {
+    "relpath": "LOOMBRIDGE.md",
+    "version": 6,
+    "action": "unchanged"
+  },
+  "agentSurface": {
+    "state": "enabled",
+    "cliVersion": "0.1.1",
+    "installedAt": "2026-08-14T11:58:54.417Z",
+    "files": [
+      {
+        "path": ".claude/commands/loombridge/build.md",
+        "sha256": "2090e85c762d1869badb7b18155efad1591393beab46a8168694e5ad2e6d6fcb"
+      },
+      {
+        "path": ".claude/commands/loombridge/plan.md",
+        "sha256": "2c8c77aa3c89bd701cadbfac0a3a0ce38b30c74f2e8eddf8579de07e3d06b3ca"
+      },
+      {
+        "path": ".claude/commands/loombridge/status.md",
+        "sha256": "86d0d2c48e404eb55768748add0c23230e72684de762c7b50276dd607c6b0902"
+      },
+      {
+        "path": ".claude/commands/loombridge/verify.md",
+        "sha256": "f8c7049a740fa23b006bdddd106bc6aafae636222e0ddc9918e27134bb96d1a7"
+      },
+      {
+        "path": ".claude/skills/asset-layer/references/2d-platformer.md",
+        "sha256": "cacf9a09b5e87e7c8952a5d6242a416bf7f070b9466d18b686878125cf540d8e"
+      },
+      {
+        "path": ".codex/skills/asset-layer/references/2d-platformer.md",
+        "sha256": "cacf9a09b5e87e7c8952a5d6242a416bf7f070b9466d18b686878125cf540d8e"
+      },
+      {
+        "path": ".claude/skills/asset-layer/references/2d-topdown-arena.md",
+        "sha256": "f52f6f9ea48a09e96e9301b630d5fcad3bc3ff60c0cd2800bb1c26349d638bf8"
+      },
+      {
+        "path": ".codex/skills/asset-layer/references/2d-topdown-arena.md",
+        "sha256": "f52f6f9ea48a09e96e9301b630d5fcad3bc3ff60c0cd2800bb1c26349d638bf8"
+      },
+      {
+        "path": ".claude/skills/asset-layer/SKILL.md",
+        "sha256": "2d569ddaf4ed0c0ddd21b65c626c3c09af510afa5c25b5a9ed0ccd3cf7021ef4"
+      },
+      {
+        "path": ".codex/skills/asset-layer/SKILL.md",
+        "sha256": "2d569ddaf4ed0c0ddd21b65c626c3c09af510afa5c25b5a9ed0ccd3cf7021ef4"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/audio.md",
+        "sha256": "92bb72240cff31548f2ed1a0ff1df07702a1734ff224e2ce8bc4da244e798d0d"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/audio.md",
+        "sha256": "92bb72240cff31548f2ed1a0ff1df07702a1734ff224e2ce8bc4da244e798d0d"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/camera-2d.md",
+        "sha256": "3c8eece2fbe6989421e279597b344d7307ce9ca57129213d309cf35c2305789c"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/camera-2d.md",
+        "sha256": "3c8eece2fbe6989421e279597b344d7307ce9ca57129213d309cf35c2305789c"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/character-anim.md",
+        "sha256": "aeadab11956f609abe0298c9afe4f0626f5b3ceb2b460abf2c92e7bf59a93cbf"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/character-anim.md",
+        "sha256": "aeadab11956f609abe0298c9afe4f0626f5b3ceb2b460abf2c92e7bf59a93cbf"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/end-state.md",
+        "sha256": "ce13978d728338339a156ef061418eb254f81c5d16a0e8d14472b27ea9c79960"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/end-state.md",
+        "sha256": "ce13978d728338339a156ef061418eb254f81c5d16a0e8d14472b27ea9c79960"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/feel-mechanics.md",
+        "sha256": "598390edf5d98d5d76f778a563a1bd4144a0cbeff4ed30e8499bac1a06322886"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/feel-mechanics.md",
+        "sha256": "598390edf5d98d5d76f778a563a1bd4144a0cbeff4ed30e8499bac1a06322886"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/hud-kit.md",
+        "sha256": "512c57570f122354d9d499bd3d43e13697ba6af17f23b7f2b8a5d944101d1875"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/hud-kit.md",
+        "sha256": "512c57570f122354d9d499bd3d43e13697ba6af17f23b7f2b8a5d944101d1875"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/juice.md",
+        "sha256": "733518f8fead97187314f71885327cb9741a47799fb4c602442f31cc620d3194"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/juice.md",
+        "sha256": "733518f8fead97187314f71885327cb9741a47799fb4c602442f31cc620d3194"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/jump-input.md",
+        "sha256": "524814ed72a08a19fa1577f665109e8b4fc7409fe44fde547ff2af34fd9f6b87"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/jump-input.md",
+        "sha256": "524814ed72a08a19fa1577f665109e8b4fc7409fe44fde547ff2af34fd9f6b87"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/player-controller.md",
+        "sha256": "a6edb613554e311dbf6327fc35008e123e4e9bb2d7a20a89d54b04245d42d185"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/player-controller.md",
+        "sha256": "a6edb613554e311dbf6327fc35008e123e4e9bb2d7a20a89d54b04245d42d185"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/spawn-point.md",
+        "sha256": "df8667c483de1bf5da72fe1a7dc0696c75998d182b5577c35c160fbd5a2c2b41"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/spawn-point.md",
+        "sha256": "df8667c483de1bf5da72fe1a7dc0696c75998d182b5577c35c160fbd5a2c2b41"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/tuning-dash-distance.md",
+        "sha256": "73a528ef907e8d3ea243a73c2d7e9879832e514925f1bda4b4ace54a4c705684"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/tuning-dash-distance.md",
+        "sha256": "73a528ef907e8d3ea243a73c2d7e9879832e514925f1bda4b4ace54a4c705684"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/tuning-jump-apex.md",
+        "sha256": "5f655f20b2afd2dfc1c415280df0f95a24a1a8062e322f1d47ca5d252f96ad21"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/tuning-jump-apex.md",
+        "sha256": "5f655f20b2afd2dfc1c415280df0f95a24a1a8062e322f1d47ca5d252f96ad21"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/references/tuning-run-speed.md",
+        "sha256": "5a2a8f324def48b23bd77d268adc479d02214a85d8cbb13f7933bea4381cb910"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/references/tuning-run-speed.md",
+        "sha256": "5a2a8f324def48b23bd77d268adc479d02214a85d8cbb13f7933bea4381cb910"
+      },
+      {
+        "path": ".claude/skills/game-polish-2d/SKILL.md",
+        "sha256": "3420c8c0779e85e444124a612659f2a99062e9471c1730d33311968c9d329e37"
+      },
+      {
+        "path": ".codex/skills/game-polish-2d/SKILL.md",
+        "sha256": "3420c8c0779e85e444124a612659f2a99062e9471c1730d33311968c9d329e37"
+      },
+      {
+        "path": ".claude/skills/generated-3d-art-integration/SKILL.md",
+        "sha256": "a252b6afb74f9bb4f0ba2b4f6c74a428a49938aa854a62fd52f2f46104431597"
+      },
+      {
+        "path": ".codex/skills/generated-3d-art-integration/SKILL.md",
+        "sha256": "a252b6afb74f9bb4f0ba2b4f6c74a428a49938aa854a62fd52f2f46104431597"
+      },
+      {
+        "path": ".claude/skills/genre-pack-authoring/SKILL.md",
+        "sha256": "377106ca3253b32ebe996f307f3c21fcf35ecfadcc1dac1de11b31c8607a9342"
+      },
+      {
+        "path": ".codex/skills/genre-pack-authoring/SKILL.md",
+        "sha256": "377106ca3253b32ebe996f307f3c21fcf35ecfadcc1dac1de11b31c8607a9342"
+      },
+      {
+        "path": ".claude/skills/graybox-greed-loop-tuning-pack/SKILL.md",
+        "sha256": "12321d30a242907ef326794bbc4ceaadbe23eb5cba581b3915cf41bed0b362df"
+      },
+      {
+        "path": ".codex/skills/graybox-greed-loop-tuning-pack/SKILL.md",
+        "sha256": "12321d30a242907ef326794bbc4ceaadbe23eb5cba581b3915cf41bed0b362df"
+      },
+      {
+        "path": ".claude/skills/hero-shot-authoring/SKILL.md",
+        "sha256": "79e8afb9fc82b1b9541a5b88ae6d2a119268725dfb25ae49ed6331e85407738f"
+      },
+      {
+        "path": ".codex/skills/hero-shot-authoring/SKILL.md",
+        "sha256": "79e8afb9fc82b1b9541a5b88ae6d2a119268725dfb25ae49ed6331e85407738f"
+      },
+      {
+        "path": ".claude/skills/mobile-device-perf/SKILL.md",
+        "sha256": "39bc0e683df430b93fe9572f5c7fcede4d8cae1d0260b2202f16d4efeff1ffa1"
+      },
+      {
+        "path": ".codex/skills/mobile-device-perf/SKILL.md",
+        "sha256": "39bc0e683df430b93fe9572f5c7fcede4d8cae1d0260b2202f16d4efeff1ffa1"
+      },
+      {
+        "path": ".claude/skills/parallax-2d/references/multi-layer.md",
+        "sha256": "ab8bb08fa5ddc069d9e9752bbe3f8bd4848993a71411a41a2ddea7eb4b23616e"
+      },
+      {
+        "path": ".codex/skills/parallax-2d/references/multi-layer.md",
+        "sha256": "ab8bb08fa5ddc069d9e9752bbe3f8bd4848993a71411a41a2ddea7eb4b23616e"
+      },
+      {
+        "path": ".claude/skills/parallax-2d/references/parallax-layer.md",
+        "sha256": "20bfb51ba857de1c5af91bac166438b947a034736952fdceb1edac6849e969b9"
+      },
+      {
+        "path": ".codex/skills/parallax-2d/references/parallax-layer.md",
+        "sha256": "20bfb51ba857de1c5af91bac166438b947a034736952fdceb1edac6849e969b9"
+      },
+      {
+        "path": ".claude/skills/parallax-2d/references/setup-recipe.md",
+        "sha256": "a13b50ba85331fcbc17b49ac0be09ac507ecab5ea58b3ab9fae29a9719747071"
+      },
+      {
+        "path": ".codex/skills/parallax-2d/references/setup-recipe.md",
+        "sha256": "a13b50ba85331fcbc17b49ac0be09ac507ecab5ea58b3ab9fae29a9719747071"
+      },
+      {
+        "path": ".claude/skills/parallax-2d/references/verification.md",
+        "sha256": "dffefa02010c64b9d146b35a321ad4250b0c61a73b63ac9b7c84c4524145d30f"
+      },
+      {
+        "path": ".codex/skills/parallax-2d/references/verification.md",
+        "sha256": "dffefa02010c64b9d146b35a321ad4250b0c61a73b63ac9b7c84c4524145d30f"
+      },
+      {
+        "path": ".claude/skills/parallax-2d/SKILL.md",
+        "sha256": "3a5e4d1b99b45e497472d0f1fa089371356f29e48b1be8f4bb9c6391ba385505"
+      },
+      {
+        "path": ".codex/skills/parallax-2d/SKILL.md",
+        "sha256": "3a5e4d1b99b45e497472d0f1fa089371356f29e48b1be8f4bb9c6391ba385505"
+      },
+      {
+        "path": ".claude/skills/platformer-level-design/references/ground-tiling.md",
+        "sha256": "a91873af34099e11b732c09946bdfb6b47b6065380f9788539fd419e38635360"
+      },
+      {
+        "path": ".codex/skills/platformer-level-design/references/ground-tiling.md",
+        "sha256": "a91873af34099e11b732c09946bdfb6b47b6065380f9788539fd419e38635360"
+      },
+      {
+        "path": ".claude/skills/platformer-level-design/references/interactables.md",
+        "sha256": "d8fdcc283a03a02d5cc6dc76de98bd3a897c75dc75f1221e273ea0f3be9f5087"
+      },
+      {
+        "path": ".codex/skills/platformer-level-design/references/interactables.md",
+        "sha256": "d8fdcc283a03a02d5cc6dc76de98bd3a897c75dc75f1221e273ea0f3be9f5087"
+      },
+      {
+        "path": ".claude/skills/platformer-level-design/SKILL.md",
+        "sha256": "ba254ba7baa0dc1c012d7b8618536b2ccb88249db1b694ef0ec542a68dc2dd4c"
+      },
+      {
+        "path": ".codex/skills/platformer-level-design/SKILL.md",
+        "sha256": "ba254ba7baa0dc1c012d7b8618536b2ccb88249db1b694ef0ec542a68dc2dd4c"
+      },
+      {
+        "path": ".claude/skills/sfx-integration-pack/SKILL.md",
+        "sha256": "5426fe32b3ff9387753357c6e88eb6ff85323a5bdd5f9126a7a2858675ee0b7c"
+      },
+      {
+        "path": ".codex/skills/sfx-integration-pack/SKILL.md",
+        "sha256": "5426fe32b3ff9387753357c6e88eb6ff85323a5bdd5f9126a7a2858675ee0b7c"
+      },
+      {
+        "path": ".claude/skills/ui-polish-pack/SKILL.md",
+        "sha256": "0836120013fc2674d0c12979d218072d2b060144f7ac51301878c53670eceb7e"
+      },
+      {
+        "path": ".codex/skills/ui-polish-pack/SKILL.md",
+        "sha256": "0836120013fc2674d0c12979d218072d2b060144f7ac51301878c53670eceb7e"
+      },
+      {
+        "path": ".claude/skills/unity-2d-game/references/build-checklist.md",
+        "sha256": "da55071cb62d279fbaed6d31f85b592b2b0ad2bd2ad9e3c55431113a8c83965d"
+      },
+      {
+        "path": ".codex/skills/unity-2d-game/references/build-checklist.md",
+        "sha256": "da55071cb62d279fbaed6d31f85b592b2b0ad2bd2ad9e3c55431113a8c83965d"
+      },
+      {
+        "path": ".claude/skills/unity-2d-game/references/default-values.md",
+        "sha256": "8a2f68edc430bca87d1c92655ae3a52013d03af5da26fa506e24fde8279e13c2"
+      },
+      {
+        "path": ".codex/skills/unity-2d-game/references/default-values.md",
+        "sha256": "8a2f68edc430bca87d1c92655ae3a52013d03af5da26fa506e24fde8279e13c2"
+      },
+      {
+        "path": ".claude/skills/unity-2d-game/references/feel-presets.md",
+        "sha256": "5be90a9d486c8f81cc117d7002a7d5a478f93aa8bcd570f87ec8b1d7333cd086"
+      },
+      {
+        "path": ".codex/skills/unity-2d-game/references/feel-presets.md",
+        "sha256": "5be90a9d486c8f81cc117d7002a7d5a478f93aa8bcd570f87ec8b1d7333cd086"
+      },
+      {
+        "path": ".claude/skills/unity-2d-game/references/scripts.md",
+        "sha256": "bb3b865a2b9c9e25336d0e8ca48266462bcd083efaa62e2db56f43e2ae12c1a4"
+      },
+      {
+        "path": ".codex/skills/unity-2d-game/references/scripts.md",
+        "sha256": "bb3b865a2b9c9e25336d0e8ca48266462bcd083efaa62e2db56f43e2ae12c1a4"
+      },
+      {
+        "path": ".claude/skills/unity-2d-game/SKILL.md",
+        "sha256": "694f5fcb5ad6e6599dd7c74ef2f59ee7a1d01e8118831df884a7495173d1e5ad"
+      },
+      {
+        "path": ".codex/skills/unity-2d-game/SKILL.md",
+        "sha256": "694f5fcb5ad6e6599dd7c74ef2f59ee7a1d01e8118831df884a7495173d1e5ad"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/acceptance-gates.md",
+        "sha256": "2a098563dff10544451dab0a4d497760aaf2324ad95cf15323c54997d0acb4a8"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/acceptance-gates.md",
+        "sha256": "2a098563dff10544451dab0a4d497760aaf2324ad95cf15323c54997d0acb4a8"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/feel-checks.md",
+        "sha256": "76edb002d5b5cf22eae508508cd21d0456f5aae741dac66851a00ad3901f0a5d"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/feel-checks.md",
+        "sha256": "76edb002d5b5cf22eae508508cd21d0456f5aae741dac66851a00ad3901f0a5d"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/framing-checks.md",
+        "sha256": "65e16d6c63e79c0b741e244143ab59ba90aedf52762844f02b4d4e5e3201fac0"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/framing-checks.md",
+        "sha256": "65e16d6c63e79c0b741e244143ab59ba90aedf52762844f02b4d4e5e3201fac0"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/playability-checks.md",
+        "sha256": "18c68a4ba82ef048ba9310b03648f408d99b4d2c652d60cf12f6eeea911bef90"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/playability-checks.md",
+        "sha256": "18c68a4ba82ef048ba9310b03648f408d99b4d2c652d60cf12f6eeea911bef90"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/report-schema.md",
+        "sha256": "e875d9d54fcc322642de6531aa4dc284254728309cef8e1ab58925817590ac95"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/report-schema.md",
+        "sha256": "e875d9d54fcc322642de6531aa4dc284254728309cef8e1ab58925817590ac95"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/ui-conformance.md",
+        "sha256": "c3ed94b35f8cf5ae4ac30e055b89b3e870d4595a35046814becf0ffb727e03a7"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/ui-conformance.md",
+        "sha256": "c3ed94b35f8cf5ae4ac30e055b89b3e870d4595a35046814becf0ffb727e03a7"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/visual-perception-models.md",
+        "sha256": "7a2debe5018c4119f2b1c3ec9e0fee8141c1824d7826dd080e364316faa587bb"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/visual-perception-models.md",
+        "sha256": "7a2debe5018c4119f2b1c3ec9e0fee8141c1824d7826dd080e364316faa587bb"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/references/vlm-review.md",
+        "sha256": "6ece36bd8e766ce524c52d058d101d4eec1576445eb8ade0be782ac4b1bdc8da"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/references/vlm-review.md",
+        "sha256": "6ece36bd8e766ce524c52d058d101d4eec1576445eb8ade0be782ac4b1bdc8da"
+      },
+      {
+        "path": ".claude/skills/verify-2d-game/SKILL.md",
+        "sha256": "f74fbef412350c33eb77750edfa590e65b606313e9702e97aa7de72a70e00fe3"
+      },
+      {
+        "path": ".codex/skills/verify-2d-game/SKILL.md",
+        "sha256": "f74fbef412350c33eb77750edfa590e65b606313e9702e97aa7de72a70e00fe3"
+      },
+      {
+        "path": ".claude/.gitattributes",
+        "sha256": "157f225611fb320344acb3367d3e11339da6a4e8164ab684932b4a283b6cbe76"
+      },
+      {
+        "path": ".codex/.gitattributes",
+        "sha256": "157f225611fb320344acb3367d3e11339da6a4e8164ab684932b4a283b6cbe76"
+      }
+    ]
+  }
+}

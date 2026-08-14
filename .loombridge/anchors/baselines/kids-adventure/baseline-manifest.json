@@ -1,0 +1,70 @@
+{
+  "kind": "trace-baseline",
+  "schemaVersion": "1",
+  "traceId": "kids-adventure",
+  "traceSha256": "754e373b4504f89764663a4aa5eb57e85f0ce3f2cc038a1268da7d9ed5af9757",
+  "approvedAt": "2026-08-14T07:12:03.279Z",
+  "sourceReportSha256": "a5fcf4ecb7f3407dc5b726984628f9d79976bb3947a07bcaef926a68904ce6cd",
+  "pngs": [
+    {
+      "captureId": "step-1",
+      "sha256": "61e557b87e2a34097b4973f2c69df5163abd5d8c0c361219944473bcea9cadb9"
+    },
+    {
+      "captureId": "step-2",
+      "sha256": "52d58863ddf4e2adbe34c3feb9539c692408abec6ff0c479f0e9730f38a173c7"
+    },
+    {
+      "captureId": "step-3",
+      "sha256": "da1052afb2720b45dbc46097f85fbdadeeb3090478b0ab00bb3109d35b041b05"
+    },
+    {
+      "captureId": "step-4",
+      "sha256": "29dd18bd4782f1830ac1961a7a92761c8b99f9a5b9a1a8ccc1a9be9eba00cda8"
+    },
+    {
+      "captureId": "step-5",
+      "sha256": "34836e2e9fec7cc1632463d3e06fb965a0f2d4ded8b1a07b322ef7baf0fd6627"
+    },
+    {
+      "captureId": "step-6",
+      "sha256": "5ca424776998e957aaed7a36c37f7e33a45b6c14c1e895845048289785c713ea"
+    },
+    {
+      "captureId": "step-7",
+      "sha256": "668dc58886c4d65f6d4b7ca26811838f2db1da5c60cf9083694fafc4324f44c1"
+    },
+    {
+      "captureId": "step-8",
+      "sha256": "2174f007b7c84c626a565fcddf754fb70d3ed0a9edc0fe0c5bd23af223363b0e"
+    },
+    {
+      "captureId": "step-9",
+      "sha256": "b3ab11e2151843faf515db97e7696890399fd387aefadba67ce6123e1f71643d"
+    },
+    {
+      "captureId": "step-10",
+      "sha256": "eebba9532ca948c60ece93939ce5fa0c577073b6a332d2c450a7236075403ef7"
+    },
+    {
+      "captureId": "step-11",
+      "sha256": "224997dce840ca3e2fe750972ab0d02776d0d5dbf30c9c744bd7a9caee443530"
+    },
+    {
+      "captureId": "step-12",
+      "sha256": "3246e2f24e818eb55443a85a2060f1bf56e1204fea4c0a9e1fd0b284fdb8d3f0"
+    },
+    {
+      "captureId": "step-13",
+      "sha256": "9a7f81c384afb9c1a9f500933b9dc3da5ff0b17075312b1703fe3657b4f01b1c"
+    },
+    {
+      "captureId": "step-14",
+      "sha256": "aaa2ac5c525ead884fe55ed135cd1248b5bff6da843c171065e2ab2722b0d015"
+    }
+  ],
+  "frameWidth": 1024,
+  "frameHeight": 576,
+  "approvalCount": 1,
+  "alignedCaptureFps": 60
+}
