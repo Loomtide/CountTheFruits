@@ -8,10 +8,6 @@
   "input": {
     "backend": "ui-events"
   },
-  "viewport": {
-    "width": 1280,
-    "height": 720
-  },
   "segments": [
     {
       "id": "step-1",
@@ -34,7 +30,7 @@
       "captures": [
         {
           "id": "step-1",
-          "settleMs": 1579.87962
+          "settleMs": 1348.3328900000001
         }
       ]
     },
@@ -72,7 +68,7 @@
       "captures": [
         {
           "id": "step-2",
-          "settleMs": 1243.03028
+          "settleMs": 1222.2408699999996
         }
       ]
     },
@@ -110,7 +106,7 @@
       "captures": [
         {
           "id": "step-3",
-          "settleMs": 972.0436999999997
+          "settleMs": 1063.3290000000006
         }
       ]
     },
@@ -148,7 +144,7 @@
       "captures": [
         {
           "id": "step-4",
-          "settleMs": 1536.33057
+          "settleMs": 826.2839999999997
         }
       ]
     },
@@ -186,7 +182,7 @@
       "captures": [
         {
           "id": "step-5",
-          "settleMs": 1012.0893500000002
+          "settleMs": 770.4512999999997
         }
       ]
     },
@@ -224,7 +220,7 @@
       "captures": [
         {
           "id": "step-6",
-          "settleMs": 1305.8713799999996
+          "settleMs": 1075.9160200000006
         }
       ]
     },
@@ -257,10 +253,10 @@
           "to": {
             "path": "/Canvas/MixPanel/MixZone"
           },
-          "travelPx": 4578.75049,
+          "travelPx": 4094.062,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.47265625,
+            "x": 0.5109375,
             "y": 0.5763889
           }
         }
@@ -268,7 +264,7 @@
       "captures": [
         {
           "id": "step-7",
-          "settleMs": 2624.260900000001
+          "settleMs": 2563.724579999999
         }
       ]
     },
@@ -301,18 +297,18 @@
           "to": {
             "path": "/Canvas/CookPanel/Ingredient_spray"
           },
-          "travelPx": 565.9002,
+          "travelPx": 415.90625,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.3109375,
-            "y": 0.338888884
+            "x": 0.43125,
+            "y": 0.3236111
           }
         }
       ],
       "captures": [
         {
           "id": "step-8",
-          "settleMs": 1826.5722999999998
+          "settleMs": 1874.465900000001
         }
       ]
     },
@@ -345,18 +341,18 @@
           "to": {
             "path": "/Canvas/CookPanel/Ingredient_pour"
           },
-          "travelPx": 738.592346,
+          "travelPx": 634.470459,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.2953125,
-            "y": 0.294444442
+            "x": 0.3734375,
+            "y": 0.283333331
           }
         }
       ],
       "captures": [
         {
           "id": "step-9",
-          "settleMs": 1639.7021999999997
+          "settleMs": 2006.9598999999998
         }
       ]
     },
@@ -424,23 +420,111 @@
           "to": {
             "path": "/Canvas/DecorPanel/TrayGroup/Topping_strawberry"
           },
-          "travelPx": 517.646545,
+          "travelPx": 364.226135,
           "travelRefHeight": 720,
           "releaseNorm": {
-            "x": 0.547656238,
-            "y": 0.4875
+            "x": 0.4625,
+            "y": 0.4125
           }
         }
       ],
       "captures": [
         {
           "id": "step-11",
-          "settleMs": 1032.5664999999972
+          "settleMs": 772.4707000000017
         }
       ]
     },
     {
       "id": "step-12",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
+          },
+          "to": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_banana_slice"
+          },
+          "travelPx": 496.6835,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.61875,
+            "y": 0.458333343
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-12",
+          "settleMs": 868.5633999999991
+        }
+      ]
+    },
+    {
+      "id": "step-13",
+      "scene": "KidsChef",
+      "actions": [
+        {
+          "do": "wait-for-visible",
+          "locator": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
+          },
+          "timeoutMs": 4000
+        },
+        {
+          "do": "wait-for-condition",
+          "locator": {
+            "path": "/Canvas/ChefGameManager"
+          },
+          "component": "ChefGameManager",
+          "property_path": "phase",
+          "operator": "equals",
+          "expected": "Decorate"
+        },
+        {
+          "do": "drag",
+          "from": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
+          },
+          "to": {
+            "path": "/Canvas/DecorPanel/TrayGroup/Topping_blueberry"
+          },
+          "travelPx": 303.878052,
+          "travelRefHeight": 720,
+          "releaseNorm": {
+            "x": 0.54375,
+            "y": 0.504166663
+          }
+        }
+      ],
+      "captures": [
+        {
+          "id": "step-13",
+          "settleMs": 2477.4757000000027
+        }
+      ]
+    },
+    {
+      "id": "step-14",
       "scene": "KidsChef",
       "actions": [
         {
@@ -469,42 +553,7 @@
       ],
       "captures": [
         {
-          "id": "step-12",
-          "settleMs": 1638.9316
-        }
-      ]
-    },
-    {
-      "id": "step-13",
-      "scene": "KidsChef",
-      "actions": [
-        {
-          "do": "wait-for-visible",
-          "locator": {
-            "path": "/Canvas/FinaleGroup/HomePillButton"
-          },
-          "timeoutMs": 4000
-        },
-        {
-          "do": "wait-for-condition",
-          "locator": {
-            "path": "/Canvas/ChefGameManager"
-          },
-          "component": "ChefGameManager",
-          "property_path": "phase",
-          "operator": "equals",
-          "expected": "Finale"
-        },
-        {
-          "do": "tap",
-          "locator": {
-            "path": "/Canvas/FinaleGroup/HomePillButton"
-          }
-        }
-      ],
-      "captures": [
-        {
-          "id": "step-13",
+          "id": "step-14",
           "settleMs": 3000
         }
       ]
