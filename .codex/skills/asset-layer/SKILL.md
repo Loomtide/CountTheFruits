@@ -12,6 +12,12 @@ Use this skill when preparing curated art for Loombridge demos through the asset
 
 Resolve every required role in this order, the same for 2D and 3D:
 
+**Before selecting anything, ask what the genre needs:** `loombridge assets roles` prints the
+required roles for this project's genre, which are registry-sourced and which are authored from the
+hero shot in hybrid mode, and the registry primitives each role accepts. It reads the project's
+ASSET_MANIFEST.json, or takes `--genre <id>`. Do not infer the role list from a platformer example:
+genres differ, and assuming otherwise is what broke a real 3d-shooter run.
+
 1. **Local registry / profile fixtures and generated assets (the default path).**
    `~/.loombridge/asset-layer/registry/*.json` + `~/.loombridge/asset-layer/profiles/*.json`, or assets generated from the
    approved hero-shot annotations. No network, no account, no configuration, so an
@@ -21,8 +27,8 @@ Resolve every required role in this order, the same for 2D and 3D:
    hosted search API via `--catalog-api <baseUrl>` (the CLI appends `/v1/assets/search`). The
    endpoint is configuration: pass `--catalog-api <baseUrl>` for the search API, or set
    `LOOMBRIDGE_ASSET_CATALOG_URL` and pass no source flag at all (it is the no-flag default for
-   `--catalog`, a shard directory or `.jsonl` URL). No deployment host is baked into Loombridge; the current base URL
-   is published alongside the asset store. The web-store domain serves `/api/...`, not
+   `--catalog`, a shard directory or `.jsonl` URL). No deployment host is baked into Loombridge; the base URL is
+   not published at a fixed path, so obtain it from whoever operates the catalog and set it once via `LOOMBRIDGE_ASSET_CATALOG_URL`. The web-store domain serves `/api/...`, not
    `/v1/...`, so do not pass it to `--catalog-api`. When the developer has opted in, query the
    catalog per role, present candidates grouped by role, recommend a cohesive set, and STOP
    for approval before applying.
@@ -54,13 +60,13 @@ loombridge assets registry-plan \
   --registry ~/.loombridge/asset-layer/registry/<3d-pack>.json \
   --profile <3d-profile.json> \
   --preferred-license CC0-1.0 \
-  --output .loombridge/reports/registry-selection-plan.json
+  --output .loombridge/run/reports/registry-selection-plan.json
 
 # 2. Show candidates grouped by role, recommend a cohesive kit, get approval, then apply:
 loombridge assets registry-apply \
   --registry ~/.loombridge/asset-layer/registry/<3d-pack>.json \
   --profile <3d-profile.json> \
-  --selections .loombridge/reports/registry-selections.json \
+  --selections .loombridge/run/reports/registry-selections.json \
   --approved-at "<ISO timestamp>"
 
 # Opted into the hosted catalog instead? Swap the source flag on BOTH commands
@@ -114,7 +120,7 @@ loombridge-asset-prep \
   --name switchyard
 ```
 
-Then read `.loombridge/handoff/switchyard-asset-prepare-report.json` and import every accepted `sprite`
+Then read `.loombridge/run/handoff/switchyard-asset-prepare-report.json` and import every accepted `sprite`
 asset using its `import.toolArguments`. Audio assets in the report should be copied/imported to the
 reported Unity path and wired to gameplay. Do not ship procedural art/audio when the report contains
 accepted non-placeholder candidates for the same primitive.
@@ -124,8 +130,8 @@ For human-visible demo runs, show the agent-selected prepared assets before impo
 ```bash
 : # (legacy cd into dev repo removed by loombridge install)
 node dist/capabilities/assets/browser-payload.js \
-  --prepare-report "$PROJECT/.loombridge/handoff/switchyard-asset-prepare-report.json" \
-  --output "$PROJECT/.loombridge/handoff/switchyard-asset-browser-payload.json"
+  --prepare-report "$PROJECT/.loombridge/run/handoff/switchyard-asset-prepare-report.json" \
+  --output "$PROJECT/.loombridge/run/handoff/switchyard-asset-browser-payload.json"
 ```
 
 Open the resulting JSON with `unity_asset_browser_open`, then poll `unity_asset_picker_state`.
@@ -138,10 +144,10 @@ Before final handoff, verify the registry accounting against the prepare report:
 ```bash
 : # (legacy cd into dev repo removed by loombridge install)
 npm run asset:handoff:check -- \
-  --prepare-report "$PROJECT/.loombridge/handoff/switchyard-asset-prepare-report.json" \
-  --verdict "$PROJECT/.loombridge/handoff/build-verdict.json,$PROJECT/.loombridge/handoff/final-verdict.json" \
-  --text "$PROJECT/.loombridge/handoff/SWITCHYARD_HANDOFF.md,$PROJECT/Assets/Scripts/Editor/SwitchyardSceneBuilder.cs" \
-  --output "$PROJECT/.loombridge/handoff/asset-handoff-consistency.json"
+  --prepare-report "$PROJECT/.loombridge/run/handoff/switchyard-asset-prepare-report.json" \
+  --verdict "$PROJECT/.loombridge/run/handoff/build-verdict.json,$PROJECT/.loombridge/run/handoff/final-verdict.json" \
+  --text "$PROJECT/.loombridge/run/handoff/SWITCHYARD_HANDOFF.md,$PROJECT/Assets/Scripts/Editor/SwitchyardSceneBuilder.cs" \
+  --output "$PROJECT/.loombridge/run/handoff/asset-handoff-consistency.json"
 ```
 
 This fails if a verdict says `registryAssets.used=false`, if a role lists an id that does not match

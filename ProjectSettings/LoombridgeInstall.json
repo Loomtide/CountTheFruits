@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "installedAt": "2026-08-11T08:00:00.009Z",
-  "cliVersion": "0.2.0",
-  "bridgeVersion": "0.2.0",
+  "installedAt": "2026-08-14T06:34:46.051Z",
+  "cliVersion": "0.1.0",
+  "bridgeVersion": "0.1.0",
   "bridgeProtocol": 1,
   "installMode": "tarball-dependency",
   "packageId": "com.loomtide.loombridge",
-  "tarball": "tarballs/com.loomtide.loombridge-0.2.0.tgz",
-  "tarballSha256": "57d54e9c00695a8515cb6615c2b1896c8165d42912aaaef549ad74a39bff6b9b",
+  "tarball": "tarballs/com.loomtide.loombridge-0.1.0.tgz",
+  "tarballSha256": "6e696d428c216086f01df56c2f077a53f9159370e37cbda85b8c5cd7c958b144",
   "routingDoc": {
     "relpath": "LOOMBRIDGE.md",
-    "version": 4,
+    "version": 6,
     "action": "unchanged"
   },
   "agentSurface": {
     "state": "enabled",
-    "cliVersion": "0.2.0",
-    "installedAt": "2026-08-11T07:59:59.993Z",
+    "cliVersion": "0.1.0",
+    "installedAt": "2026-08-14T06:34:46.036Z",
     "files": [
       {
         "path": ".claude/commands/loombridge/build.md",
-        "sha256": "71ba14144b977d0905987f9b765691ced669a2c1d8d82eff183177db9e353677"
+        "sha256": "2090e85c762d1869badb7b18155efad1591393beab46a8168694e5ad2e6d6fcb"
       },
       {
         "path": ".claude/commands/loombridge/plan.md",
-        "sha256": "0f1ef6925a1e292d0655b6e36735e135b587462865445eea311da2eec1c6b1fa"
+        "sha256": "2c8c77aa3c89bd701cadbfac0a3a0ce38b30c74f2e8eddf8579de07e3d06b3ca"
       },
       {
         "path": ".claude/commands/loombridge/status.md",
@@ -32,7 +32,7 @@
       },
       {
         "path": ".claude/commands/loombridge/verify.md",
-        "sha256": "e3589661148d1dcfa6c49ace6e7269b6c24d9f05504b9c798f73b946ab0384c9"
+        "sha256": "f8c7049a740fa23b006bdddd106bc6aafae636222e0ddc9918e27134bb96d1a7"
       },
       {
         "path": ".claude/skills/asset-layer/references/2d-platformer.md",
@@ -44,19 +44,19 @@
       },
       {
         "path": ".claude/skills/asset-layer/references/2d-topdown-arena.md",
-        "sha256": "ff90a44b6dc391d68b982077a1288c205e5388294245a3b448b597d2c135a786"
+        "sha256": "f52f6f9ea48a09e96e9301b630d5fcad3bc3ff60c0cd2800bb1c26349d638bf8"
       },
       {
         "path": ".codex/skills/asset-layer/references/2d-topdown-arena.md",
-        "sha256": "ff90a44b6dc391d68b982077a1288c205e5388294245a3b448b597d2c135a786"
+        "sha256": "f52f6f9ea48a09e96e9301b630d5fcad3bc3ff60c0cd2800bb1c26349d638bf8"
       },
       {
         "path": ".claude/skills/asset-layer/SKILL.md",
-        "sha256": "298e6c043f2f4f077f70aaf2c9d11f22aae3734c8bb2397beaa6fb39acd6976b"
+        "sha256": "2d569ddaf4ed0c0ddd21b65c626c3c09af510afa5c25b5a9ed0ccd3cf7021ef4"
       },
       {
         "path": ".codex/skills/asset-layer/SKILL.md",
-        "sha256": "298e6c043f2f4f077f70aaf2c9d11f22aae3734c8bb2397beaa6fb39acd6976b"
+        "sha256": "2d569ddaf4ed0c0ddd21b65c626c3c09af510afa5c25b5a9ed0ccd3cf7021ef4"
       },
       {
         "path": ".claude/skills/game-polish-2d/references/audio.md",
@@ -171,6 +171,46 @@
         "sha256": "3420c8c0779e85e444124a612659f2a99062e9471c1730d33311968c9d329e37"
       },
       {
+        "path": ".claude/skills/generated-3d-art-integration/SKILL.md",
+        "sha256": "a252b6afb74f9bb4f0ba2b4f6c74a428a49938aa854a62fd52f2f46104431597"
+      },
+      {
+        "path": ".codex/skills/generated-3d-art-integration/SKILL.md",
+        "sha256": "a252b6afb74f9bb4f0ba2b4f6c74a428a49938aa854a62fd52f2f46104431597"
+      },
+      {
+        "path": ".claude/skills/genre-pack-authoring/SKILL.md",
+        "sha256": "377106ca3253b32ebe996f307f3c21fcf35ecfadcc1dac1de11b31c8607a9342"
+      },
+      {
+        "path": ".codex/skills/genre-pack-authoring/SKILL.md",
+        "sha256": "377106ca3253b32ebe996f307f3c21fcf35ecfadcc1dac1de11b31c8607a9342"
+      },
+      {
+        "path": ".claude/skills/graybox-greed-loop-tuning-pack/SKILL.md",
+        "sha256": "12321d30a242907ef326794bbc4ceaadbe23eb5cba581b3915cf41bed0b362df"
+      },
+      {
+        "path": ".codex/skills/graybox-greed-loop-tuning-pack/SKILL.md",
+        "sha256": "12321d30a242907ef326794bbc4ceaadbe23eb5cba581b3915cf41bed0b362df"
+      },
+      {
+        "path": ".claude/skills/hero-shot-authoring/SKILL.md",
+        "sha256": "79e8afb9fc82b1b9541a5b88ae6d2a119268725dfb25ae49ed6331e85407738f"
+      },
+      {
+        "path": ".codex/skills/hero-shot-authoring/SKILL.md",
+        "sha256": "79e8afb9fc82b1b9541a5b88ae6d2a119268725dfb25ae49ed6331e85407738f"
+      },
+      {
+        "path": ".claude/skills/mobile-device-perf/SKILL.md",
+        "sha256": "39bc0e683df430b93fe9572f5c7fcede4d8cae1d0260b2202f16d4efeff1ffa1"
+      },
+      {
+        "path": ".codex/skills/mobile-device-perf/SKILL.md",
+        "sha256": "39bc0e683df430b93fe9572f5c7fcede4d8cae1d0260b2202f16d4efeff1ffa1"
+      },
+      {
         "path": ".claude/skills/parallax-2d/references/multi-layer.md",
         "sha256": "ab8bb08fa5ddc069d9e9752bbe3f8bd4848993a71411a41a2ddea7eb4b23616e"
       },
@@ -233,6 +273,22 @@
       {
         "path": ".codex/skills/platformer-level-design/SKILL.md",
         "sha256": "ba254ba7baa0dc1c012d7b8618536b2ccb88249db1b694ef0ec542a68dc2dd4c"
+      },
+      {
+        "path": ".claude/skills/sfx-integration-pack/SKILL.md",
+        "sha256": "5426fe32b3ff9387753357c6e88eb6ff85323a5bdd5f9126a7a2858675ee0b7c"
+      },
+      {
+        "path": ".codex/skills/sfx-integration-pack/SKILL.md",
+        "sha256": "5426fe32b3ff9387753357c6e88eb6ff85323a5bdd5f9126a7a2858675ee0b7c"
+      },
+      {
+        "path": ".claude/skills/ui-polish-pack/SKILL.md",
+        "sha256": "0836120013fc2674d0c12979d218072d2b060144f7ac51301878c53670eceb7e"
+      },
+      {
+        "path": ".codex/skills/ui-polish-pack/SKILL.md",
+        "sha256": "0836120013fc2674d0c12979d218072d2b060144f7ac51301878c53670eceb7e"
       },
       {
         "path": ".claude/skills/unity-2d-game/references/build-checklist.md",
@@ -308,11 +364,11 @@
       },
       {
         "path": ".claude/skills/verify-2d-game/references/report-schema.md",
-        "sha256": "64e9069b61306c1039cba1a6e79f28625210fcf544dfa507a9c5c990de4bd9b1"
+        "sha256": "e875d9d54fcc322642de6531aa4dc284254728309cef8e1ab58925817590ac95"
       },
       {
         "path": ".codex/skills/verify-2d-game/references/report-schema.md",
-        "sha256": "64e9069b61306c1039cba1a6e79f28625210fcf544dfa507a9c5c990de4bd9b1"
+        "sha256": "e875d9d54fcc322642de6531aa4dc284254728309cef8e1ab58925817590ac95"
       },
       {
         "path": ".claude/skills/verify-2d-game/references/ui-conformance.md",
@@ -340,11 +396,11 @@
       },
       {
         "path": ".claude/skills/verify-2d-game/SKILL.md",
-        "sha256": "3038719e50f6d8da91abbad2258f3fa280ce6668ccbccd7cd1d3eb628d9d2c85"
+        "sha256": "f74fbef412350c33eb77750edfa590e65b606313e9702e97aa7de72a70e00fe3"
       },
       {
         "path": ".codex/skills/verify-2d-game/SKILL.md",
-        "sha256": "3038719e50f6d8da91abbad2258f3fa280ce6668ccbccd7cd1d3eb628d9d2c85"
+        "sha256": "f74fbef412350c33eb77750edfa590e65b606313e9702e97aa7de72a70e00fe3"
       },
       {
         "path": ".claude/.gitattributes",
