@@ -22,7 +22,7 @@ genres differ, and assuming otherwise is what broke a real 3d-shooter run.
    `~/.loombridge/asset-layer/registry/*.json` + `~/.loombridge/asset-layer/profiles/*.json`, or assets generated from the
    approved hero-shot annotations. No network, no account, no configuration, so an
    **offline** or air-gapped run is the normal case rather than a special mode.
-2. **Hosted Loomtide catalog: an OPTIONAL, read-only accelerator** the developer may choose.
+2. **Hosted Loombridge catalog: an OPTIONAL, read-only accelerator** the developer may choose.
    Humans browse + approve candidates at **https://assetstore.loomtide.ai/**; the CLI reads a
    hosted search API via `--catalog-api <baseUrl>` (the CLI appends `/v1/assets/search`). The
    endpoint is configuration: pass `--catalog-api <baseUrl>` for the search API, or set

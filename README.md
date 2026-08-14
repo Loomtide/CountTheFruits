@@ -4,8 +4,8 @@ A polished, kid-friendly **mini-game package** built in Unity 6000.3 (2D) — a 
 home-screen hub that links three gentle, no-fail mini-games. Pick a tile, play, and tap the
 pink 🏠 **Home** button (top-left in every game) to come back to the hub.
 
-> ### Built entirely by [LoomTide](https://github.com/Loomtide)
-> Every part of this package was produced automatically by **LoomTide** — the game design,
+> ### Built entirely with [Loombridge](https://github.com/Loomtide/loombridge)
+> Every part of this package was produced automatically through **Loombridge**: the game design,
 > the C# gameplay code, and **all of the art and audio**. The soft rounded-vector sprites,
 > the mascots, the UI, the sound effects, and the background music are **procedurally
 > generated** (see [`Tools/`](Tools/)) — nothing is hand-drawn, stock, or licensed.
@@ -44,12 +44,12 @@ and tap a tile (touch works on device). Each game scene also runs standalone.
 - `Tools/gen_*.py` — the asset generators (Python + PIL/numpy/fontTools); re-run to regenerate art/audio
 - `Assets/Editor/` — scene builders (`KidsAdventureHomeBuilder`, `KidsChefBuilder`,
   `ShapeMatchSceneBuilder`, `KidsPolishBuilder`) runnable from the "KidsAdventure" menu or batch `-executeMethod`
-- `.loomtide/design/` — frozen design targets (hero shots) and build plans
+- `.loombridge/anchors/` — frozen visual baselines (hero shots) used to verify each build step
 
 ## Notes
-Built through the Loomtide MCP Unity bridge, one polished slice at a time, measured against
+Built through the Loombridge MCP Unity bridge, one polished slice at a time, measured against
 frozen hero shots. These are **standalone kids' games** and intentionally do not target
-Loomtide's platformer verification gates. Audio is procedurally generated and may benefit
+Loombridge's platformer verification gates. Audio is procedurally generated and may benefit
 from a taste pass.
 
 ## Requirements
